@@ -1,0 +1,469 @@
+{
+  "timestamp": "2025-06-30T18:48:06.130Z",
+  "gitHash": "115ac7914e5e5d767dcb13a6db5dc82d5e17031d",
+  "syncVersion": "1.0.0",
+  "files": {
+    "tokens": {
+      "lastModified": "2025-06-30T18:44:57.764Z",
+      "checksum": "ewogICJnbG9iYWwiOiB7CiAgICAidHlw"
+    },
+    "components": {},
+    "documentation": {}
+  },
+  "components": {
+    "accordion": {
+      "file": "accordion.tsx",
+      "lastModified": "2025-06-23T17:18:46.380Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "alert-dialog": {
+      "file": "alert-dialog.tsx",
+      "lastModified": "2025-06-23T17:18:46.380Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "alert": {
+      "file": "alert.tsx",
+      "lastModified": "2025-06-23T17:18:46.380Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [
+        "variants",
+        "variant"
+      ],
+      "props": []
+    },
+    "aspect-ratio": {
+      "file": "aspect-ratio.tsx",
+      "lastModified": "2025-06-23T17:18:46.380Z",
+      "checksum": "aW1wb3J0ICogYXMgQXNwZWN0UmF0aW9Q",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "avatar": {
+      "file": "avatar.tsx",
+      "lastModified": "2025-06-23T17:18:46.380Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "badge": {
+      "file": "badge.tsx",
+      "lastModified": "2025-06-23T17:18:46.380Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [
+        "variants",
+        "variant"
+      ],
+      "props": []
+    },
+    "breadcrumb": {
+      "file": "breadcrumb.tsx",
+      "lastModified": "2025-06-23T17:18:46.381Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "button": {
+      "file": "button.tsx",
+      "lastModified": "2025-06-23T17:18:46.381Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [
+        "variants",
+        "variant"
+      ],
+      "props": [
+        "asChild"
+      ]
+    },
+    "calendar": {
+      "file": "calendar.tsx",
+      "lastModified": "2025-06-23T17:18:46.381Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "card": {
+      "file": "card.tsx",
+      "lastModified": "2025-06-23T17:18:46.381Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "carousel": {
+      "file": "carousel.tsx",
+      "lastModified": "2025-06-23T17:18:46.381Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "chart": {
+      "file": "chart.tsx",
+      "lastModified": "2025-06-23T17:18:46.381Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "checkbox": {
+      "file": "checkbox.tsx",
+      "lastModified": "2025-06-23T17:18:46.381Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "collapsible": {
+      "file": "collapsible.tsx",
+      "lastModified": "2025-06-23T17:18:46.382Z",
+      "checksum": "aW1wb3J0ICogYXMgQ29sbGFwc2libGVQ",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "command": {
+      "file": "command.tsx",
+      "lastModified": "2025-06-23T17:18:46.382Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "context-menu": {
+      "file": "context-menu.tsx",
+      "lastModified": "2025-06-23T17:18:46.382Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "date-picker": {
+      "file": "date-picker.tsx",
+      "lastModified": "2025-06-23T17:26:02.988Z",
+      "checksum": "InVzZSBjbGllbnQiCgppbXBvcnQgKiBh",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": [
+        "date",
+        "onDateChange",
+        "placeholder",
+        "disabled",
+        "className"
+      ]
+    },
+    "dialog": {
+      "file": "dialog.tsx",
+      "lastModified": "2025-06-23T17:18:46.382Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "drawer": {
+      "file": "drawer.tsx",
+      "lastModified": "2025-06-23T17:18:46.382Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "dropdown-menu": {
+      "file": "dropdown-menu.tsx",
+      "lastModified": "2025-06-23T17:18:46.382Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "form": {
+      "file": "form.tsx",
+      "lastModified": "2025-06-23T17:18:46.382Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "hover-card": {
+      "file": "hover-card.tsx",
+      "lastModified": "2025-06-23T17:18:46.383Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "input-otp": {
+      "file": "input-otp.tsx",
+      "lastModified": "2025-06-23T17:18:46.383Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "input": {
+      "file": "input.tsx",
+      "lastModified": "2025-06-23T17:18:46.383Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "label": {
+      "file": "label.tsx",
+      "lastModified": "2025-06-23T17:18:46.383Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "loading": {
+      "file": "loading.tsx",
+      "lastModified": "2025-06-23T17:26:31.885Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [
+        "variants",
+        "size"
+      ],
+      "props": [
+        "text",
+        "showText"
+      ]
+    },
+    "menubar": {
+      "file": "menubar.tsx",
+      "lastModified": "2025-06-23T17:18:46.383Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "navigation-menu": {
+      "file": "navigation-menu.tsx",
+      "lastModified": "2025-06-23T17:18:46.383Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "pagination": {
+      "file": "pagination.tsx",
+      "lastModified": "2025-06-23T17:18:46.383Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "popover": {
+      "file": "popover.tsx",
+      "lastModified": "2025-06-23T17:18:46.383Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "progress": {
+      "file": "progress.tsx",
+      "lastModified": "2025-06-24T21:32:35.729Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "radio-group": {
+      "file": "radio-group.tsx",
+      "lastModified": "2025-06-23T17:18:46.384Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "resizable": {
+      "file": "resizable.tsx",
+      "lastModified": "2025-06-23T17:18:46.384Z",
+      "checksum": "aW1wb3J0IHsgR3JpcFZlcnRpY2FsIH0g",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "scroll-area": {
+      "file": "scroll-area.tsx",
+      "lastModified": "2025-06-23T17:18:46.384Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "search": {
+      "file": "search.tsx",
+      "lastModified": "2025-06-23T17:26:17.769Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": [
+        "onClear",
+        "showClearButton"
+      ]
+    },
+    "select": {
+      "file": "select.tsx",
+      "lastModified": "2025-06-23T17:18:46.384Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "separator": {
+      "file": "separator.tsx",
+      "lastModified": "2025-06-23T17:18:46.384Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "sheet": {
+      "file": "sheet.tsx",
+      "lastModified": "2025-06-23T17:18:46.384Z",
+      "checksum": "aW1wb3J0ICogYXMgU2hlZXRQcmltaXRp",
+      "hasDocumentation": false,
+      "variants": [
+        "variants",
+        "side"
+      ],
+      "props": []
+    },
+    "sidebar": {
+      "file": "sidebar.tsx",
+      "lastModified": "2025-06-23T17:18:46.385Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [
+        "variants",
+        "variant"
+      ],
+      "props": []
+    },
+    "skeleton": {
+      "file": "skeleton.tsx",
+      "lastModified": "2025-06-23T17:18:46.385Z",
+      "checksum": "aW1wb3J0IHsgY24gfSBmcm9tICJAL2xp",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "slider": {
+      "file": "slider.tsx",
+      "lastModified": "2025-06-23T17:18:46.385Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "sonner": {
+      "file": "sonner.tsx",
+      "lastModified": "2025-06-23T17:18:46.385Z",
+      "checksum": "aW1wb3J0IHsgdXNlVGhlbWUgfSBmcm9t",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "switch": {
+      "file": "switch.tsx",
+      "lastModified": "2025-06-23T17:18:46.385Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "table": {
+      "file": "table.tsx",
+      "lastModified": "2025-06-23T17:18:46.385Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "tabs": {
+      "file": "tabs.tsx",
+      "lastModified": "2025-06-24T21:11:30.243Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "textarea": {
+      "file": "textarea.tsx",
+      "lastModified": "2025-06-23T17:18:46.385Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "toast": {
+      "file": "toast.tsx",
+      "lastModified": "2025-06-23T17:18:46.385Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [
+        "variants",
+        "variant"
+      ],
+      "props": []
+    },
+    "toaster": {
+      "file": "toaster.tsx",
+      "lastModified": "2025-06-23T17:18:46.385Z",
+      "checksum": "aW1wb3J0IHsgdXNlVG9hc3QgfSBmcm9t",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "toggle-group": {
+      "file": "toggle-group.tsx",
+      "lastModified": "2025-06-23T17:18:46.386Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    },
+    "toggle": {
+      "file": "toggle.tsx",
+      "lastModified": "2025-06-23T17:18:46.386Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [
+        "variants",
+        "variant"
+      ],
+      "props": []
+    },
+    "tooltip": {
+      "file": "tooltip.tsx",
+      "lastModified": "2025-06-23T17:18:46.386Z",
+      "checksum": "aW1wb3J0ICogYXMgUmVhY3QgZnJvbSAi",
+      "hasDocumentation": false,
+      "variants": [],
+      "props": []
+    }
+  },
+  "figmaFileKey": "GCOT1J14E1GEauL9qUt9E5",
+  "lastFigmaSync": null,
+  "syncConflicts": [],
+  "validation": {
+    "tokensValid": false,
+    "componentsValid": false,
+    "documentationComplete": false
+  }
+}

@@ -1,0 +1,1562 @@
+{
+  "global": {
+    "typography": {
+      "fontFamilies": {
+        "sans": {
+          "value": "Geist, system-ui, sans-serif",
+          "type": "fontFamilies",
+          "description": "Primary font family for body text"
+        },
+        "heading": {
+          "value": "Geist, system-ui, sans-serif",
+          "type": "fontFamilies",
+          "description": "Font family for headings (uses same as sans for portability)"
+        },
+        "mono": {
+          "value": "Geist Mono, ui-monospace, SFMono-Regular, monospace",
+          "type": "fontFamilies",
+          "description": "Monospace font for code"
+        }
+      },
+      "fontSizes": {
+        "xs": {
+          "value": "12px",
+          "type": "fontSizes"
+        },
+        "sm": {
+          "value": "14px",
+          "type": "fontSizes"
+        },
+        "base": {
+          "value": "16px",
+          "type": "fontSizes"
+        },
+        "lg": {
+          "value": "18px",
+          "type": "fontSizes"
+        },
+        "xl": {
+          "value": "20px",
+          "type": "fontSizes"
+        },
+        "2xl": {
+          "value": "24px",
+          "type": "fontSizes"
+        },
+        "3xl": {
+          "value": "30px",
+          "type": "fontSizes"
+        },
+        "4xl": {
+          "value": "36px",
+          "type": "fontSizes"
+        },
+        "5xl": {
+          "value": "48px",
+          "type": "fontSizes"
+        },
+        "6xl": {
+          "value": "60px",
+          "type": "fontSizes"
+        },
+        "7xl": {
+          "value": "72px",
+          "type": "fontSizes"
+        },
+        "8xl": {
+          "value": "96px",
+          "type": "fontSizes"
+        },
+        "9xl": {
+          "value": "128px",
+          "type": "fontSizes"
+        }
+      },
+      "fontWeights": {
+        "normal": {
+          "value": "400",
+          "type": "fontWeights"
+        },
+        "medium": {
+          "value": "500",
+          "type": "fontWeights"
+        },
+        "semibold": {
+          "value": "600",
+          "type": "fontWeights"
+        },
+        "bold": {
+          "value": "700",
+          "type": "fontWeights"
+        },
+        "extrabold": {
+          "value": "800",
+          "type": "fontWeights"
+        },
+        "black": {
+          "value": "900",
+          "type": "fontWeights"
+        }
+      },
+      "lineHeights": {
+        "none": {
+          "value": "1",
+          "type": "lineHeights"
+        },
+        "tight": {
+          "value": "1.25",
+          "type": "lineHeights"
+        },
+        "snug": {
+          "value": "1.375",
+          "type": "lineHeights"
+        },
+        "normal": {
+          "value": "1.5",
+          "type": "lineHeights"
+        },
+        "relaxed": {
+          "value": "1.625",
+          "type": "lineHeights"
+        },
+        "loose": {
+          "value": "2",
+          "type": "lineHeights"
+        }
+      }
+    },
+    "spacing": {
+      "spacing": {
+        "0": {
+          "value": "0px",
+          "type": "spacing"
+        },
+        "1": {
+          "value": "4px",
+          "type": "spacing"
+        },
+        "2": {
+          "value": "8px",
+          "type": "spacing"
+        },
+        "3": {
+          "value": "12px",
+          "type": "spacing"
+        },
+        "4": {
+          "value": "16px",
+          "type": "spacing"
+        },
+        "5": {
+          "value": "20px",
+          "type": "spacing"
+        },
+        "6": {
+          "value": "24px",
+          "type": "spacing"
+        },
+        "7": {
+          "value": "28px",
+          "type": "spacing"
+        },
+        "8": {
+          "value": "32px",
+          "type": "spacing"
+        },
+        "9": {
+          "value": "36px",
+          "type": "spacing"
+        },
+        "10": {
+          "value": "40px",
+          "type": "spacing"
+        },
+        "11": {
+          "value": "44px",
+          "type": "spacing"
+        },
+        "12": {
+          "value": "48px",
+          "type": "spacing"
+        },
+        "14": {
+          "value": "56px",
+          "type": "spacing"
+        },
+        "16": {
+          "value": "64px",
+          "type": "spacing"
+        },
+        "20": {
+          "value": "80px",
+          "type": "spacing"
+        },
+        "24": {
+          "value": "96px",
+          "type": "spacing"
+        },
+        "28": {
+          "value": "112px",
+          "type": "spacing"
+        },
+        "32": {
+          "value": "128px",
+          "type": "spacing"
+        },
+        "36": {
+          "value": "144px",
+          "type": "spacing"
+        },
+        "40": {
+          "value": "160px",
+          "type": "spacing"
+        },
+        "44": {
+          "value": "176px",
+          "type": "spacing"
+        },
+        "48": {
+          "value": "192px",
+          "type": "spacing"
+        },
+        "52": {
+          "value": "208px",
+          "type": "spacing"
+        },
+        "56": {
+          "value": "224px",
+          "type": "spacing"
+        },
+        "60": {
+          "value": "240px",
+          "type": "spacing"
+        },
+        "64": {
+          "value": "256px",
+          "type": "spacing"
+        },
+        "72": {
+          "value": "288px",
+          "type": "spacing"
+        },
+        "80": {
+          "value": "320px",
+          "type": "spacing"
+        },
+        "96": {
+          "value": "384px",
+          "type": "spacing"
+        },
+        "px": {
+          "value": "1px",
+          "type": "spacing"
+        }
+      },
+      "borderRadius": {
+        "none": {
+          "value": "0rem",
+          "type": "borderRadius",
+          "description": "Border radius none - no rounding"
+        },
+        "sm": {
+          "value": "0.125rem",
+          "type": "borderRadius",
+          "description": "Border radius sm - 2px"
+        },
+        "base": {
+          "value": "0.25rem",
+          "type": "borderRadius",
+          "description": "Border radius base - 4px"
+        },
+        "md": {
+          "value": "0.375rem",
+          "type": "borderRadius",
+          "description": "Border radius md - 6px"
+        },
+        "lg": {
+          "value": "0.5rem",
+          "type": "borderRadius",
+          "description": "Border radius lg - 8px"
+        },
+        "xl": {
+          "value": "0.75rem",
+          "type": "borderRadius",
+          "description": "Border radius xl - 12px"
+        },
+        "2xl": {
+          "value": "1rem",
+          "type": "borderRadius",
+          "description": "Border radius 2xl - 16px"
+        },
+        "3xl": {
+          "value": "1.5rem",
+          "type": "borderRadius",
+          "description": "Border radius 3xl - 24px"
+        },
+        "full": {
+          "value": "9999px",
+          "type": "borderRadius",
+          "description": "Border radius full - fully rounded"
+        }
+      }
+    },
+    "colors": {
+      "gray-50": {
+        "value": "#ff3030",
+        "type": "color",
+        "description": "Core color gray 50"
+      },
+      "gray-100": {
+        "value": "#f3f4f6",
+        "type": "color",
+        "description": "Core color gray 100"
+      },
+      "gray-200": {
+        "value": "#e5e7eb",
+        "type": "color",
+        "description": "Core color gray 200"
+      },
+      "gray-300": {
+        "value": "#d1d5db",
+        "type": "color",
+        "description": "Core color gray 300"
+      },
+      "gray-400": {
+        "value": "#9ca3af",
+        "type": "color",
+        "description": "Core color gray 400"
+      },
+      "gray-500": {
+        "value": "#6b7280",
+        "type": "color",
+        "description": "Core color gray 500"
+      },
+      "gray-600": {
+        "value": "#4b5563",
+        "type": "color",
+        "description": "Core color gray 600"
+      },
+      "gray-700": {
+        "value": "#374151",
+        "type": "color",
+        "description": "Core color gray 700"
+      },
+      "gray-800": {
+        "value": "#1f2937",
+        "type": "color",
+        "description": "Core color gray 800"
+      },
+      "gray-900": {
+        "value": "#111827",
+        "type": "color",
+        "description": "Core color gray 900"
+      },
+      "gray-950": {
+        "value": "#030712",
+        "type": "color",
+        "description": "Core color gray 950"
+      },
+      "blue-50": {
+        "value": "#eff6ff",
+        "type": "color",
+        "description": "Core color blue 50"
+      },
+      "blue-100": {
+        "value": "#dbeafe",
+        "type": "color",
+        "description": "Core color blue 100"
+      },
+      "blue-200": {
+        "value": "#bfdbfe",
+        "type": "color",
+        "description": "Core color blue 200"
+      },
+      "blue-300": {
+        "value": "#93c5fd",
+        "type": "color",
+        "description": "Core color blue 300"
+      },
+      "blue-400": {
+        "value": "#60a5fa",
+        "type": "color",
+        "description": "Core color blue 400"
+      },
+      "blue-500": {
+        "value": "#3b82f6",
+        "type": "color",
+        "description": "Core color blue 500"
+      },
+      "blue-600": {
+        "value": "#2563eb",
+        "type": "color",
+        "description": "Core color blue 600"
+      },
+      "blue-700": {
+        "value": "#1d4ed8",
+        "type": "color",
+        "description": "Core color blue 700"
+      },
+      "blue-800": {
+        "value": "#1e40af",
+        "type": "color",
+        "description": "Core color blue 800"
+      },
+      "blue-900": {
+        "value": "#1e3a8a",
+        "type": "color",
+        "description": "Core color blue 900"
+      },
+      "blue-950": {
+        "value": "#172554",
+        "type": "color",
+        "description": "Core color blue 950"
+      },
+      "red-50": {
+        "value": "#fef2f2",
+        "type": "color",
+        "description": "Core color red 50"
+      },
+      "red-100": {
+        "value": "#fee2e2",
+        "type": "color",
+        "description": "Core color red 100"
+      },
+      "red-200": {
+        "value": "#fecaca",
+        "type": "color",
+        "description": "Core color red 200"
+      },
+      "red-300": {
+        "value": "#fca5a5",
+        "type": "color",
+        "description": "Core color red 300"
+      },
+      "red-400": {
+        "value": "#f87171",
+        "type": "color",
+        "description": "Core color red 400"
+      },
+      "red-500": {
+        "value": "#ef4444",
+        "type": "color",
+        "description": "Core color red 500"
+      },
+      "red-600": {
+        "value": "#dc2626",
+        "type": "color",
+        "description": "Core color red 600"
+      },
+      "red-700": {
+        "value": "#b91c1c",
+        "type": "color",
+        "description": "Core color red 700"
+      },
+      "red-800": {
+        "value": "#991b1b",
+        "type": "color",
+        "description": "Core color red 800"
+      },
+      "red-900": {
+        "value": "#7f1d1d",
+        "type": "color",
+        "description": "Core color red 900"
+      },
+      "red-950": {
+        "value": "#450a0a",
+        "type": "color",
+        "description": "Core color red 950"
+      },
+      "green-50": {
+        "value": "#f0fdf4",
+        "type": "color",
+        "description": "Core color green 50"
+      },
+      "green-100": {
+        "value": "#dcfce7",
+        "type": "color",
+        "description": "Core color green 100"
+      },
+      "green-200": {
+        "value": "#bbf7d0",
+        "type": "color",
+        "description": "Core color green 200"
+      },
+      "green-300": {
+        "value": "#86efac",
+        "type": "color",
+        "description": "Core color green 300"
+      },
+      "green-400": {
+        "value": "#4ade80",
+        "type": "color",
+        "description": "Core color green 400"
+      },
+      "green-500": {
+        "value": "#22c55e",
+        "type": "color",
+        "description": "Core color green 500"
+      },
+      "green-600": {
+        "value": "#16a34a",
+        "type": "color",
+        "description": "Core color green 600"
+      },
+      "green-700": {
+        "value": "#15803d",
+        "type": "color",
+        "description": "Core color green 700"
+      },
+      "green-800": {
+        "value": "#166534",
+        "type": "color",
+        "description": "Core color green 800"
+      },
+      "green-900": {
+        "value": "#14532d",
+        "type": "color",
+        "description": "Core color green 900"
+      },
+      "green-950": {
+        "value": "#052e16",
+        "type": "color",
+        "description": "Core color green 950"
+      },
+      "amber-50": {
+        "value": "#fffbeb",
+        "type": "color",
+        "description": "Core color amber 50"
+      },
+      "amber-100": {
+        "value": "#fef3c7",
+        "type": "color",
+        "description": "Core color amber 100"
+      },
+      "amber-200": {
+        "value": "#fde68a",
+        "type": "color",
+        "description": "Core color amber 200"
+      },
+      "amber-300": {
+        "value": "#fcd34d",
+        "type": "color",
+        "description": "Core color amber 300"
+      },
+      "amber-400": {
+        "value": "#fbbf24",
+        "type": "color",
+        "description": "Core color amber 400"
+      },
+      "amber-500": {
+        "value": "#f59e0b",
+        "type": "color",
+        "description": "Core color amber 500"
+      },
+      "amber-600": {
+        "value": "#d97706",
+        "type": "color",
+        "description": "Core color amber 600"
+      },
+      "amber-700": {
+        "value": "#b45309",
+        "type": "color",
+        "description": "Core color amber 700"
+      },
+      "amber-800": {
+        "value": "#92400e",
+        "type": "color",
+        "description": "Core color amber 800"
+      },
+      "amber-900": {
+        "value": "#78350f",
+        "type": "color",
+        "description": "Core color amber 900"
+      },
+      "amber-950": {
+        "value": "#451a03",
+        "type": "color",
+        "description": "Core color amber 950"
+      },
+      "orange-50": {
+        "value": "#fff7ed",
+        "type": "color",
+        "description": "Core color orange 50"
+      },
+      "orange-100": {
+        "value": "#ffedd5",
+        "type": "color",
+        "description": "Core color orange 100"
+      },
+      "orange-200": {
+        "value": "#fed7aa",
+        "type": "color",
+        "description": "Core color orange 200"
+      },
+      "orange-300": {
+        "value": "#fdba74",
+        "type": "color",
+        "description": "Core color orange 300"
+      },
+      "orange-400": {
+        "value": "#fb923c",
+        "type": "color",
+        "description": "Core color orange 400"
+      },
+      "orange-500": {
+        "value": "#f97316",
+        "type": "color",
+        "description": "Core color orange 500"
+      },
+      "orange-600": {
+        "value": "#ea580c",
+        "type": "color",
+        "description": "Core color orange 600"
+      },
+      "orange-700": {
+        "value": "#c2410c",
+        "type": "color",
+        "description": "Core color orange 700"
+      },
+      "orange-800": {
+        "value": "#9a3412",
+        "type": "color",
+        "description": "Core color orange 800"
+      },
+      "orange-900": {
+        "value": "#7c2d12",
+        "type": "color",
+        "description": "Core color orange 900"
+      },
+      "orange-950": {
+        "value": "#431407",
+        "type": "color",
+        "description": "Core color orange 950"
+      },
+      "purple-50": {
+        "value": "#faf5ff",
+        "type": "color",
+        "description": "Core color purple 50"
+      },
+      "purple-100": {
+        "value": "#f3e8ff",
+        "type": "color",
+        "description": "Core color purple 100"
+      },
+      "purple-200": {
+        "value": "#e9d5ff",
+        "type": "color",
+        "description": "Core color purple 200"
+      },
+      "purple-300": {
+        "value": "#d8b4fe",
+        "type": "color",
+        "description": "Core color purple 300"
+      },
+      "purple-400": {
+        "value": "#c084fc",
+        "type": "color",
+        "description": "Core color purple 400"
+      },
+      "purple-500": {
+        "value": "#a855f7",
+        "type": "color",
+        "description": "Core color purple 500"
+      },
+      "purple-600": {
+        "value": "#9333ea",
+        "type": "color",
+        "description": "Core color purple 600"
+      },
+      "purple-700": {
+        "value": "#7c3aed",
+        "type": "color",
+        "description": "Core color purple 700"
+      },
+      "purple-800": {
+        "value": "#6b21a8",
+        "type": "color",
+        "description": "Core color purple 800"
+      },
+      "purple-900": {
+        "value": "#581c87",
+        "type": "color",
+        "description": "Core color purple 900"
+      },
+      "purple-950": {
+        "value": "#3b0764",
+        "type": "color",
+        "description": "Core color purple 950"
+      },
+      "indigo-50": {
+        "value": "#eef2ff",
+        "type": "color",
+        "description": "Core color indigo 50"
+      },
+      "indigo-100": {
+        "value": "#e0e7ff",
+        "type": "color",
+        "description": "Core color indigo 100"
+      },
+      "indigo-200": {
+        "value": "#c7d2fe",
+        "type": "color",
+        "description": "Core color indigo 200"
+      },
+      "indigo-300": {
+        "value": "#a5b4fc",
+        "type": "color",
+        "description": "Core color indigo 300"
+      },
+      "indigo-400": {
+        "value": "#818cf8",
+        "type": "color",
+        "description": "Core color indigo 400"
+      },
+      "indigo-500": {
+        "value": "#6366f1",
+        "type": "color",
+        "description": "Core color indigo 500"
+      },
+      "indigo-600": {
+        "value": "#4f46e5",
+        "type": "color",
+        "description": "Core color indigo 600"
+      },
+      "indigo-700": {
+        "value": "#4338ca",
+        "type": "color",
+        "description": "Core color indigo 700"
+      },
+      "indigo-800": {
+        "value": "#3730a3",
+        "type": "color",
+        "description": "Core color indigo 800"
+      },
+      "indigo-900": {
+        "value": "#312e81",
+        "type": "color",
+        "description": "Core color indigo 900"
+      },
+      "indigo-950": {
+        "value": "#1e1b4b",
+        "type": "color",
+        "description": "Core color indigo 950"
+      },
+      "sky-50": {
+        "value": "#f0f9ff",
+        "type": "color",
+        "description": "Core color sky 50"
+      },
+      "sky-100": {
+        "value": "#e0f2fe",
+        "type": "color",
+        "description": "Core color sky 100"
+      },
+      "sky-200": {
+        "value": "#bae6fd",
+        "type": "color",
+        "description": "Core color sky 200"
+      },
+      "sky-300": {
+        "value": "#7dd3fc",
+        "type": "color",
+        "description": "Core color sky 300"
+      },
+      "sky-400": {
+        "value": "#38bdf8",
+        "type": "color",
+        "description": "Core color sky 400"
+      },
+      "sky-500": {
+        "value": "#0ea5e9",
+        "type": "color",
+        "description": "Core color sky 500"
+      },
+      "sky-600": {
+        "value": "#0284c7",
+        "type": "color",
+        "description": "Core color sky 600"
+      },
+      "sky-700": {
+        "value": "#0369a1",
+        "type": "color",
+        "description": "Core color sky 700"
+      },
+      "sky-800": {
+        "value": "#075985",
+        "type": "color",
+        "description": "Core color sky 800"
+      },
+      "sky-900": {
+        "value": "#0c4a6e",
+        "type": "color",
+        "description": "Core color sky 900"
+      },
+      "sky-950": {
+        "value": "#082f49",
+        "type": "color",
+        "description": "Core color sky 950"
+      },
+      "pink-50": {
+        "value": "#fdf2f8",
+        "type": "color",
+        "description": "Core color pink 50"
+      },
+      "pink-100": {
+        "value": "#fce7f3",
+        "type": "color",
+        "description": "Core color pink 100"
+      },
+      "pink-200": {
+        "value": "#fbcfe8",
+        "type": "color",
+        "description": "Core color pink 200"
+      },
+      "pink-300": {
+        "value": "#f9a8d4",
+        "type": "color",
+        "description": "Core color pink 300"
+      },
+      "pink-400": {
+        "value": "#f472b6",
+        "type": "color",
+        "description": "Core color pink 400"
+      },
+      "pink-500": {
+        "value": "#ec4899",
+        "type": "color",
+        "description": "Core color pink 500"
+      },
+      "pink-600": {
+        "value": "#db2777",
+        "type": "color",
+        "description": "Core color pink 600"
+      },
+      "pink-700": {
+        "value": "#be185d",
+        "type": "color",
+        "description": "Core color pink 700"
+      },
+      "pink-800": {
+        "value": "#9d174d",
+        "type": "color",
+        "description": "Core color pink 800"
+      },
+      "pink-900": {
+        "value": "#831843",
+        "type": "color",
+        "description": "Core color pink 900"
+      },
+      "pink-950": {
+        "value": "#500724",
+        "type": "color",
+        "description": "Core color pink 950"
+      },
+      "teal-50": {
+        "value": "#f0fdfa",
+        "type": "color",
+        "description": "Core color teal 50"
+      },
+      "teal-100": {
+        "value": "#ccfbf1",
+        "type": "color",
+        "description": "Core color teal 100"
+      },
+      "teal-200": {
+        "value": "#99f6e4",
+        "type": "color",
+        "description": "Core color teal 200"
+      },
+      "teal-300": {
+        "value": "#5eead4",
+        "type": "color",
+        "description": "Core color teal 300"
+      },
+      "teal-400": {
+        "value": "#2dd4bf",
+        "type": "color",
+        "description": "Core color teal 400"
+      },
+      "teal-500": {
+        "value": "#14b8a6",
+        "type": "color",
+        "description": "Core color teal 500"
+      },
+      "teal-600": {
+        "value": "#0d9488",
+        "type": "color",
+        "description": "Core color teal 600"
+      },
+      "teal-700": {
+        "value": "#0f766e",
+        "type": "color",
+        "description": "Core color teal 700"
+      },
+      "teal-800": {
+        "value": "#115e59",
+        "type": "color",
+        "description": "Core color teal 800"
+      },
+      "teal-900": {
+        "value": "#134e4a",
+        "type": "color",
+        "description": "Core color teal 900"
+      },
+      "teal-950": {
+        "value": "#042f2e",
+        "type": "color",
+        "description": "Core color teal 950"
+      }
+    }
+  },
+  "light": {
+    "colors": {
+      "color-primary": {
+        "value": "var(--blue-600)",
+        "type": "color",
+        "description": "Light theme color primary"
+      },
+      "color-primary-hover": {
+        "value": "var(--blue-700)",
+        "type": "color",
+        "description": "Light theme color primary hover"
+      },
+      "color-primary-active": {
+        "value": "var(--blue-800)",
+        "type": "color",
+        "description": "Light theme color primary active"
+      },
+      "color-primary-disabled": {
+        "value": "var(--blue-300)",
+        "type": "color",
+        "description": "Light theme color primary disabled"
+      },
+      "color-primary-subtle": {
+        "value": "var(--blue-50)",
+        "type": "color",
+        "description": "Light theme color primary subtle"
+      },
+      "color-text-primary": {
+        "value": "var(--gray-900)",
+        "type": "color",
+        "description": "Light theme color text primary"
+      },
+      "color-text-secondary": {
+        "value": "var(--gray-700)",
+        "type": "color",
+        "description": "Light theme color text secondary"
+      },
+      "color-text-tertiary": {
+        "value": "var(--gray-500)",
+        "type": "color",
+        "description": "Light theme color text tertiary"
+      },
+      "color-text-disabled": {
+        "value": "var(--gray-400)",
+        "type": "color",
+        "description": "Light theme color text disabled"
+      },
+      "color-text-inverse": {
+        "value": "var(--gray-50)",
+        "type": "color",
+        "description": "Light theme color text inverse"
+      },
+      "color-text-link": {
+        "value": "var(--blue-600)",
+        "type": "color",
+        "description": "Light theme color text link"
+      },
+      "color-text-link-hover": {
+        "value": "var(--blue-700)",
+        "type": "color",
+        "description": "Light theme color text link hover"
+      },
+      "color-background": {
+        "value": "#ffffff",
+        "type": "color",
+        "description": "Light theme color background"
+      },
+      "color-background-subtle": {
+        "value": "var(--gray-50)",
+        "type": "color",
+        "description": "Light theme color background subtle"
+      },
+      "color-surface": {
+        "value": "#ffffff",
+        "type": "color",
+        "description": "Light theme color surface"
+      },
+      "color-surface-subtle": {
+        "value": "var(--gray-50)",
+        "type": "color",
+        "description": "Light theme color surface subtle"
+      },
+      "color-surface-hover": {
+        "value": "var(--gray-100)",
+        "type": "color",
+        "description": "Light theme color surface hover"
+      },
+      "color-surface-pressed": {
+        "value": "var(--gray-200)",
+        "type": "color",
+        "description": "Light theme color surface pressed"
+      },
+      "color-border": {
+        "value": "var(--gray-200)",
+        "type": "color",
+        "description": "Light theme color border"
+      },
+      "color-border-subtle": {
+        "value": "var(--gray-100)",
+        "type": "color",
+        "description": "Light theme color border subtle"
+      },
+      "color-border-strong": {
+        "value": "var(--gray-300)",
+        "type": "color",
+        "description": "Light theme color border strong"
+      },
+      "color-border-focus": {
+        "value": "var(--blue-500)",
+        "type": "color",
+        "description": "Light theme color border focus"
+      },
+      "color-success": {
+        "value": "var(--green-600)",
+        "type": "color",
+        "description": "Light theme color success"
+      },
+      "color-success-background": {
+        "value": "var(--green-50)",
+        "type": "color",
+        "description": "Light theme color success background"
+      },
+      "color-success-border": {
+        "value": "var(--green-200)",
+        "type": "color",
+        "description": "Light theme color success border"
+      },
+      "color-success-hover": {
+        "value": "var(--green-700)",
+        "type": "color",
+        "description": "Light theme color success hover"
+      },
+      "color-error": {
+        "value": "var(--red-600)",
+        "type": "color",
+        "description": "Light theme color error"
+      },
+      "color-error-background": {
+        "value": "var(--red-50)",
+        "type": "color",
+        "description": "Light theme color error background"
+      },
+      "color-error-border": {
+        "value": "var(--red-200)",
+        "type": "color",
+        "description": "Light theme color error border"
+      },
+      "color-error-hover": {
+        "value": "var(--red-700)",
+        "type": "color",
+        "description": "Light theme color error hover"
+      },
+      "color-warning": {
+        "value": "var(--amber-600)",
+        "type": "color",
+        "description": "Light theme color warning"
+      },
+      "color-warning-background": {
+        "value": "var(--amber-50)",
+        "type": "color",
+        "description": "Light theme color warning background"
+      },
+      "color-warning-border": {
+        "value": "var(--amber-200)",
+        "type": "color",
+        "description": "Light theme color warning border"
+      },
+      "color-warning-hover": {
+        "value": "var(--amber-700)",
+        "type": "color",
+        "description": "Light theme color warning hover"
+      },
+      "color-info": {
+        "value": "var(--blue-600)",
+        "type": "color",
+        "description": "Light theme color info"
+      },
+      "color-info-background": {
+        "value": "var(--blue-50)",
+        "type": "color",
+        "description": "Light theme color info background"
+      },
+      "color-info-border": {
+        "value": "var(--blue-200)",
+        "type": "color",
+        "description": "Light theme color info border"
+      },
+      "color-info-hover": {
+        "value": "var(--blue-700)",
+        "type": "color",
+        "description": "Light theme color info hover"
+      },
+      "background": {
+        "value": "#ffffff",
+        "type": "color",
+        "description": "Light theme background"
+      },
+      "foreground": {
+        "value": "#020817",
+        "type": "color",
+        "description": "Light theme foreground"
+      },
+      "card": {
+        "value": "#ffffff",
+        "type": "color",
+        "description": "Light theme card"
+      },
+      "card-foreground": {
+        "value": "#020817",
+        "type": "color",
+        "description": "Light theme card foreground"
+      },
+      "popover": {
+        "value": "#ffffff",
+        "type": "color",
+        "description": "Light theme popover"
+      },
+      "popover-foreground": {
+        "value": "#020817",
+        "type": "color",
+        "description": "Light theme popover foreground"
+      },
+      "primary": {
+        "value": "#0f172a",
+        "type": "color",
+        "description": "Light theme primary"
+      },
+      "secondary": {
+        "value": "#f1f5f9",
+        "type": "color",
+        "description": "Light theme secondary"
+      },
+      "muted": {
+        "value": "#f1f5f9",
+        "type": "color",
+        "description": "Light theme muted"
+      },
+      "accent": {
+        "value": "#f1f5f9",
+        "type": "color",
+        "description": "Light theme accent"
+      },
+      "destructive": {
+        "value": "#ef4444",
+        "type": "color",
+        "description": "Light theme destructive"
+      },
+      "border": {
+        "value": "#e2e8f0",
+        "type": "color",
+        "description": "Light theme border"
+      },
+      "input": {
+        "value": "#e2e8f0",
+        "type": "color",
+        "description": "Light theme input"
+      },
+      "ring": {
+        "value": "#020817",
+        "type": "color",
+        "description": "Light theme ring"
+      },
+      "radius": {
+        "value": "var(--radius-lg)",
+        "type": "borderRadius",
+        "description": "Light theme radius",
+        "aliases": [
+          "borderRadius.lg"
+        ],
+        "originalValue": "var(--radius-lg)"
+      },
+      "sidebar-background": {
+        "value": "#fafafa",
+        "type": "color",
+        "description": "Light theme sidebar background"
+      },
+      "sidebar-foreground": {
+        "value": "#3f3f46",
+        "type": "color",
+        "description": "Light theme sidebar foreground"
+      },
+      "sidebar-primary": {
+        "value": "#18181b",
+        "type": "color",
+        "description": "Light theme sidebar primary"
+      },
+      "sidebar-primary-foreground": {
+        "value": "#fafafa",
+        "type": "color",
+        "description": "Light theme sidebar primary foreground"
+      },
+      "sidebar-accent": {
+        "value": "#f4f4f5",
+        "type": "color",
+        "description": "Light theme sidebar accent"
+      },
+      "sidebar-accent-foreground": {
+        "value": "#18181b",
+        "type": "color",
+        "description": "Light theme sidebar accent foreground"
+      },
+      "sidebar-border": {
+        "value": "#e5e7eb",
+        "type": "color",
+        "description": "Light theme sidebar border"
+      },
+      "sidebar-ring": {
+        "value": "#3b82f6",
+        "type": "color",
+        "description": "Light theme sidebar ring"
+      }
+    }
+  },
+  "dark": {
+    "colors": {
+      "color-primary": {
+        "value": "var(--blue-600)",
+        "type": "color",
+        "description": "Dark theme color primary"
+      },
+      "color-primary-hover": {
+        "value": "var(--blue-700)",
+        "type": "color",
+        "description": "Dark theme color primary hover"
+      },
+      "color-primary-active": {
+        "value": "var(--blue-800)",
+        "type": "color",
+        "description": "Dark theme color primary active"
+      },
+      "color-primary-disabled": {
+        "value": "var(--blue-300)",
+        "type": "color",
+        "description": "Dark theme color primary disabled"
+      },
+      "color-primary-subtle": {
+        "value": "var(--blue-50)",
+        "type": "color",
+        "description": "Dark theme color primary subtle"
+      },
+      "color-text-primary": {
+        "value": "var(--gray-50)",
+        "type": "color",
+        "description": "Dark theme color text primary"
+      },
+      "color-text-secondary": {
+        "value": "var(--gray-300)",
+        "type": "color",
+        "description": "Dark theme color text secondary"
+      },
+      "color-text-tertiary": {
+        "value": "var(--gray-500)",
+        "type": "color",
+        "description": "Dark theme color text tertiary"
+      },
+      "color-text-disabled": {
+        "value": "var(--gray-600)",
+        "type": "color",
+        "description": "Dark theme color text disabled"
+      },
+      "color-text-inverse": {
+        "value": "var(--gray-900)",
+        "type": "color",
+        "description": "Dark theme color text inverse"
+      },
+      "color-text-link": {
+        "value": "var(--blue-400)",
+        "type": "color",
+        "description": "Dark theme color text link"
+      },
+      "color-text-link-hover": {
+        "value": "var(--blue-300)",
+        "type": "color",
+        "description": "Dark theme color text link hover"
+      },
+      "color-background": {
+        "value": "var(--gray-950)",
+        "type": "color",
+        "description": "Dark theme color background"
+      },
+      "color-background-subtle": {
+        "value": "var(--gray-900)",
+        "type": "color",
+        "description": "Dark theme color background subtle"
+      },
+      "color-surface": {
+        "value": "var(--gray-900)",
+        "type": "color",
+        "description": "Dark theme color surface"
+      },
+      "color-surface-subtle": {
+        "value": "var(--gray-800)",
+        "type": "color",
+        "description": "Dark theme color surface subtle"
+      },
+      "color-surface-hover": {
+        "value": "var(--gray-800)",
+        "type": "color",
+        "description": "Dark theme color surface hover"
+      },
+      "color-surface-pressed": {
+        "value": "var(--gray-700)",
+        "type": "color",
+        "description": "Dark theme color surface pressed"
+      },
+      "color-border": {
+        "value": "var(--gray-700)",
+        "type": "color",
+        "description": "Dark theme color border"
+      },
+      "color-border-subtle": {
+        "value": "var(--gray-800)",
+        "type": "color",
+        "description": "Dark theme color border subtle"
+      },
+      "color-border-strong": {
+        "value": "var(--gray-600)",
+        "type": "color",
+        "description": "Dark theme color border strong"
+      },
+      "color-border-focus": {
+        "value": "var(--blue-500)",
+        "type": "color",
+        "description": "Dark theme color border focus"
+      },
+      "color-success": {
+        "value": "var(--green-400)",
+        "type": "color",
+        "description": "Dark theme color success"
+      },
+      "color-success-background": {
+        "value": "var(--green-950)",
+        "type": "color",
+        "description": "Dark theme color success background"
+      },
+      "color-success-border": {
+        "value": "var(--green-800)",
+        "type": "color",
+        "description": "Dark theme color success border"
+      },
+      "color-success-hover": {
+        "value": "var(--green-300)",
+        "type": "color",
+        "description": "Dark theme color success hover"
+      },
+      "color-error": {
+        "value": "var(--red-400)",
+        "type": "color",
+        "description": "Dark theme color error"
+      },
+      "color-error-background": {
+        "value": "var(--red-950)",
+        "type": "color",
+        "description": "Dark theme color error background"
+      },
+      "color-error-border": {
+        "value": "var(--red-800)",
+        "type": "color",
+        "description": "Dark theme color error border"
+      },
+      "color-error-hover": {
+        "value": "var(--red-300)",
+        "type": "color",
+        "description": "Dark theme color error hover"
+      },
+      "color-warning": {
+        "value": "var(--amber-400)",
+        "type": "color",
+        "description": "Dark theme color warning"
+      },
+      "color-warning-background": {
+        "value": "var(--amber-950)",
+        "type": "color",
+        "description": "Dark theme color warning background"
+      },
+      "color-warning-border": {
+        "value": "var(--amber-800)",
+        "type": "color",
+        "description": "Dark theme color warning border"
+      },
+      "color-warning-hover": {
+        "value": "var(--amber-300)",
+        "type": "color",
+        "description": "Dark theme color warning hover"
+      },
+      "color-info": {
+        "value": "var(--blue-400)",
+        "type": "color",
+        "description": "Dark theme color info"
+      },
+      "color-info-background": {
+        "value": "var(--blue-950)",
+        "type": "color",
+        "description": "Dark theme color info background"
+      },
+      "color-info-border": {
+        "value": "var(--blue-800)",
+        "type": "color",
+        "description": "Dark theme color info border"
+      },
+      "color-info-hover": {
+        "value": "var(--blue-300)",
+        "type": "color",
+        "description": "Dark theme color info hover"
+      },
+      "background": {
+        "value": "#020817",
+        "type": "color",
+        "description": "Dark theme background"
+      },
+      "foreground": {
+        "value": "#f8fafc",
+        "type": "color",
+        "description": "Dark theme foreground"
+      },
+      "card": {
+        "value": "#020817",
+        "type": "color",
+        "description": "Dark theme card"
+      },
+      "card-foreground": {
+        "value": "#f8fafc",
+        "type": "color",
+        "description": "Dark theme card foreground"
+      },
+      "popover": {
+        "value": "#020817",
+        "type": "color",
+        "description": "Dark theme popover"
+      },
+      "popover-foreground": {
+        "value": "#f8fafc",
+        "type": "color",
+        "description": "Dark theme popover foreground"
+      },
+      "primary": {
+        "value": "#f8fafc",
+        "type": "color",
+        "description": "Dark theme primary"
+      },
+      "secondary": {
+        "value": "#1e293b",
+        "type": "color",
+        "description": "Dark theme secondary"
+      },
+      "muted": {
+        "value": "#1e293b",
+        "type": "color",
+        "description": "Dark theme muted"
+      },
+      "accent": {
+        "value": "#1e293b",
+        "type": "color",
+        "description": "Dark theme accent"
+      },
+      "destructive": {
+        "value": "#7f1d1d",
+        "type": "color",
+        "description": "Dark theme destructive"
+      },
+      "border": {
+        "value": "#1e293b",
+        "type": "color",
+        "description": "Dark theme border"
+      },
+      "input": {
+        "value": "#1e293b",
+        "type": "color",
+        "description": "Dark theme input"
+      },
+      "ring": {
+        "value": "#cbd5e1",
+        "type": "color",
+        "description": "Dark theme ring"
+      },
+      "sidebar-background": {
+        "value": "#18181b",
+        "type": "color",
+        "description": "Dark theme sidebar background"
+      },
+      "sidebar-foreground": {
+        "value": "#f4f4f5",
+        "type": "color",
+        "description": "Dark theme sidebar foreground"
+      },
+      "sidebar-primary": {
+        "value": "#030712",
+        "type": "color",
+        "description": "Dark theme sidebar primary"
+      },
+      "sidebar-primary-foreground": {
+        "value": "#f9fafb",
+        "type": "color",
+        "description": "Dark theme sidebar primary foreground"
+      },
+      "sidebar-accent": {
+        "value": "#27272a",
+        "type": "color",
+        "description": "Dark theme sidebar accent"
+      },
+      "sidebar-accent-foreground": {
+        "value": "#f4f4f5",
+        "type": "color",
+        "description": "Dark theme sidebar accent foreground"
+      },
+      "sidebar-border": {
+        "value": "#27272a",
+        "type": "color",
+        "description": "Dark theme sidebar border"
+      },
+      "sidebar-ring": {
+        "value": "#3b82f6",
+        "type": "color",
+        "description": "Dark theme sidebar ring"
+      },
+      "radius": {
+        "value": "var(--radius-lg)",
+        "type": "borderRadius",
+        "description": "Dark theme radius",
+        "aliases": [
+          "borderRadius.lg"
+        ],
+        "originalValue": "var(--radius-lg)"
+      }
+    }
+  },
+  "$themes": [
+    {
+      "id": "light",
+      "name": "Light",
+      "selectedTokenSets": {
+        "global": "enabled",
+        "light": "enabled"
+      }
+    },
+    {
+      "id": "dark",
+      "name": "Dark",
+      "selectedTokenSets": {
+        "global": "enabled",
+        "dark": "enabled"
+      }
+    }
+  ],
+  "$metadata": {
+    "tokenSetOrder": [
+      "global",
+      "light",
+      "dark"
+    ]
+  }
+}

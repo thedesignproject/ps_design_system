@@ -1,0 +1,179 @@
+name: Sync Design System
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/index.css'
+      - 'src/components/ui/**'
+      - 'src/lib/design-tokens.ts'
+      - 'src/components/documentation/**'
+      - 'design-tokens/**'
+      - 'tailwind.config.ts'
+      - 'package.json'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'src/index.css'
+      - 'src/components/ui/**'
+      - 'src/lib/design-tokens.ts'
+      - 'src/components/documentation/**'
+      - 'design-tokens/**'
+      - 'tailwind.config.ts'
+      - 'package.json'
+  workflow_dispatch:
+    inputs:
+      sync_strategy:
+        description: 'Sync Strategy'
+        required: true
+        default: 'validate-only'
+        type: choice
+        options:
+          - validate-only
+          - tokens-to-figma
+          - figma-to-tokens
+          - bidirectional
+
+jobs:
+  sync-design-system:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Extract design tokens
+        run: npm run extract-tokens
+
+      - name: Check for Figma secrets
+        id: figma-secrets
+        run: |
+          if [[ -n "${{ secrets.FIGMA_TOKEN }}" && -n "${{ secrets.FIGMA_FILE_KEY }}" ]]; then
+            echo "available=true" >> $GITHUB_OUTPUT
+            echo "Figma secrets are available"
+          else
+            echo "available=false" >> $GITHUB_OUTPUT
+            echo "Warning: Figma secrets not configured. Skipping Figma sync validation."
+          fi
+
+      - name: Validate design system sync
+        if: steps.figma-secrets.outputs.available == 'true'
+        run: npm run sync-figma:validate
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
+
+      - name: Check for token changes
+        id: token-changes
+        run: |
+          if git diff --name-only HEAD~1 HEAD | grep -q "design-tokens/\|src/index.css\|tailwind.config.ts"; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "Design tokens or CSS changes detected"
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "No design token changes"
+          fi
+
+      - name: Run full sync (if tokens changed)
+        if: steps.token-changes.outputs.changes == 'true' && github.event_name == 'push' && steps.figma-secrets.outputs.available == 'true'
+        run: npm run sync-figma ${{ github.event.inputs.sync_strategy || 'tokens-to-figma' }}
+        env:
+          FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+          FIGMA_FILE_KEY: ${{ secrets.FIGMA_FILE_KEY }}
+
+      - name: Upload sync artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: design-system-sync-${{ github.run_number }}
+          path: |
+            design-tokens/
+            !design-tokens/node_modules
+          retention-days: 30
+
+      - name: Comment on PR with sync results
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = './design-tokens/sync-manifest.json';
+            
+            if (fs.existsSync(path)) {
+              const manifest = JSON.parse(fs.readFileSync(path, 'utf8'));
+              const componentCount = Object.keys(manifest.components).length;
+              const documentedComponents = Object.values(manifest.components).filter(c => c.hasDocumentation).length;
+              const coveragePercent = Math.round(documentedComponents / componentCount * 100);
+              
+              const comment = `## 🎨 Design System Sync Report
+              
+              ### 📊 Component Analysis
+              - **Total Components**: ${componentCount}
+              - **Documented**: ${documentedComponents}
+              - **Documentation Coverage**: ${coveragePercent}%
+              
+              ### 🎨 Design Tokens
+              - **Themes**: ${manifest.$metadata?.themes?.length || 0}
+              - **Last Updated**: ${new Date(manifest.timestamp).toLocaleString()}
+              - **Git Hash**: \`${manifest.gitHash.substring(0, 7)}\`
+              
+              ### 🔄 Sync Status
+              ${steps.token-changes.outputs.changes === 'true' ? '✅ Design tokens updated and ready for Figma import' : 'ℹ️ No design token changes detected'}
+              
+              **Next Steps:**
+              1. Import \`design-tokens/figma-tokens.json\` to Figma Tokens plugin
+              2. Review component documentation coverage
+              3. Update Figma components to match code changes
+              `;
+              
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: comment
+              });
+            }
+
+      - name: Commit updated tokens (if changed)
+        if: steps.token-changes.outputs.changes == 'true' && github.event_name == 'push'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add design-tokens/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update design tokens [skip ci]"
+            git push
+          fi
+
+  notify-slack:
+    needs: sync-design-system
+    runs-on: ubuntu-latest
+    if: always() && github.event_name == 'push' && github.ref == 'refs/heads/main'
+    
+    steps:
+      - name: Notify Slack of sync results
+        if: github.event.repository.private == false
+        uses: 8398a7/action-slack@v3
+        with:
+          status: ${{ needs.sync-design-system.result }}
+          text: |
+            Design System Sync ${{ needs.sync-design-system.result }}
+            Repository: ${{ github.repository }}
+            Commit: ${{ github.sha }}
+            Author: ${{ github.actor }}
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} 

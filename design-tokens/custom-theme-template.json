@@ -1,0 +1,939 @@
+{
+  "instructions": "Copy this template to create custom themes. Replace values and add to your CSS.",
+  "example": {
+    "customThemeName": "blue",
+    "selector": ".theme-blue",
+    "tokens": {
+      "gray-50": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme gray 50"
+      },
+      "gray-100": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme gray 100"
+      },
+      "gray-200": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme gray 200"
+      },
+      "gray-300": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme gray 300"
+      },
+      "gray-400": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme gray 400"
+      },
+      "gray-500": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme gray 500"
+      },
+      "gray-600": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme gray 600"
+      },
+      "gray-700": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme gray 700"
+      },
+      "gray-800": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme gray 800"
+      },
+      "gray-900": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme gray 900"
+      },
+      "gray-950": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme gray 950"
+      },
+      "blue-50": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme blue 50"
+      },
+      "blue-100": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme blue 100"
+      },
+      "blue-200": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme blue 200"
+      },
+      "blue-300": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme blue 300"
+      },
+      "blue-400": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme blue 400"
+      },
+      "blue-500": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme blue 500"
+      },
+      "blue-600": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme blue 600"
+      },
+      "blue-700": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme blue 700"
+      },
+      "blue-800": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme blue 800"
+      },
+      "blue-900": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme blue 900"
+      },
+      "blue-950": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme blue 950"
+      },
+      "red-50": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme red 50"
+      },
+      "red-100": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme red 100"
+      },
+      "red-200": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme red 200"
+      },
+      "red-300": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme red 300"
+      },
+      "red-400": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme red 400"
+      },
+      "red-500": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme red 500"
+      },
+      "red-600": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme red 600"
+      },
+      "red-700": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme red 700"
+      },
+      "red-800": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme red 800"
+      },
+      "red-900": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme red 900"
+      },
+      "red-950": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme red 950"
+      },
+      "green-50": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme green 50"
+      },
+      "green-100": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme green 100"
+      },
+      "green-200": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme green 200"
+      },
+      "green-300": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme green 300"
+      },
+      "green-400": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme green 400"
+      },
+      "green-500": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme green 500"
+      },
+      "green-600": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme green 600"
+      },
+      "green-700": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme green 700"
+      },
+      "green-800": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme green 800"
+      },
+      "green-900": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme green 900"
+      },
+      "green-950": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme green 950"
+      },
+      "amber-50": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme amber 50"
+      },
+      "amber-100": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme amber 100"
+      },
+      "amber-200": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme amber 200"
+      },
+      "amber-300": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme amber 300"
+      },
+      "amber-400": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme amber 400"
+      },
+      "amber-500": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme amber 500"
+      },
+      "amber-600": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme amber 600"
+      },
+      "amber-700": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme amber 700"
+      },
+      "amber-800": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme amber 800"
+      },
+      "amber-900": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme amber 900"
+      },
+      "amber-950": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme amber 950"
+      },
+      "orange-50": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme orange 50"
+      },
+      "orange-100": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme orange 100"
+      },
+      "orange-200": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme orange 200"
+      },
+      "orange-300": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme orange 300"
+      },
+      "orange-400": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme orange 400"
+      },
+      "orange-500": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme orange 500"
+      },
+      "orange-600": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme orange 600"
+      },
+      "orange-700": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme orange 700"
+      },
+      "orange-800": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme orange 800"
+      },
+      "orange-900": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme orange 900"
+      },
+      "orange-950": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme orange 950"
+      },
+      "purple-50": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme purple 50"
+      },
+      "purple-100": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme purple 100"
+      },
+      "purple-200": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme purple 200"
+      },
+      "purple-300": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme purple 300"
+      },
+      "purple-400": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme purple 400"
+      },
+      "purple-500": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme purple 500"
+      },
+      "purple-600": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme purple 600"
+      },
+      "purple-700": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme purple 700"
+      },
+      "purple-800": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme purple 800"
+      },
+      "purple-900": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme purple 900"
+      },
+      "purple-950": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme purple 950"
+      },
+      "indigo-50": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme indigo 50"
+      },
+      "indigo-100": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme indigo 100"
+      },
+      "indigo-200": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme indigo 200"
+      },
+      "indigo-300": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme indigo 300"
+      },
+      "indigo-400": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme indigo 400"
+      },
+      "indigo-500": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme indigo 500"
+      },
+      "indigo-600": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme indigo 600"
+      },
+      "indigo-700": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme indigo 700"
+      },
+      "indigo-800": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme indigo 800"
+      },
+      "indigo-900": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme indigo 900"
+      },
+      "indigo-950": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme indigo 950"
+      },
+      "sky-50": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sky 50"
+      },
+      "sky-100": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sky 100"
+      },
+      "sky-200": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sky 200"
+      },
+      "sky-300": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sky 300"
+      },
+      "sky-400": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sky 400"
+      },
+      "sky-500": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sky 500"
+      },
+      "sky-600": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sky 600"
+      },
+      "sky-700": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sky 700"
+      },
+      "sky-800": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sky 800"
+      },
+      "sky-900": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sky 900"
+      },
+      "sky-950": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sky 950"
+      },
+      "pink-50": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme pink 50"
+      },
+      "pink-100": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme pink 100"
+      },
+      "pink-200": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme pink 200"
+      },
+      "pink-300": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme pink 300"
+      },
+      "pink-400": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme pink 400"
+      },
+      "pink-500": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme pink 500"
+      },
+      "pink-600": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme pink 600"
+      },
+      "pink-700": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme pink 700"
+      },
+      "pink-800": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme pink 800"
+      },
+      "pink-900": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme pink 900"
+      },
+      "pink-950": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme pink 950"
+      },
+      "teal-50": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme teal 50"
+      },
+      "teal-100": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme teal 100"
+      },
+      "teal-200": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme teal 200"
+      },
+      "teal-300": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme teal 300"
+      },
+      "teal-400": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme teal 400"
+      },
+      "teal-500": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme teal 500"
+      },
+      "teal-600": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme teal 600"
+      },
+      "teal-700": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme teal 700"
+      },
+      "teal-800": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme teal 800"
+      },
+      "teal-900": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme teal 900"
+      },
+      "teal-950": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme teal 950"
+      },
+      "color-primary": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color primary"
+      },
+      "color-primary-hover": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color primary hover"
+      },
+      "color-primary-active": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color primary active"
+      },
+      "color-primary-disabled": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color primary disabled"
+      },
+      "color-primary-subtle": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color primary subtle"
+      },
+      "color-text-primary": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color text primary"
+      },
+      "color-text-secondary": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color text secondary"
+      },
+      "color-text-tertiary": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color text tertiary"
+      },
+      "color-text-disabled": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color text disabled"
+      },
+      "color-text-inverse": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color text inverse"
+      },
+      "color-text-link": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color text link"
+      },
+      "color-text-link-hover": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color text link hover"
+      },
+      "color-background": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color background"
+      },
+      "color-background-subtle": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color background subtle"
+      },
+      "color-surface": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color surface"
+      },
+      "color-surface-subtle": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color surface subtle"
+      },
+      "color-surface-hover": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color surface hover"
+      },
+      "color-surface-pressed": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color surface pressed"
+      },
+      "color-border": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color border"
+      },
+      "color-border-subtle": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color border subtle"
+      },
+      "color-border-strong": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color border strong"
+      },
+      "color-border-focus": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color border focus"
+      },
+      "color-success": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color success"
+      },
+      "color-success-background": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color success background"
+      },
+      "color-success-border": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color success border"
+      },
+      "color-success-hover": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color success hover"
+      },
+      "color-error": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color error"
+      },
+      "color-error-background": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color error background"
+      },
+      "color-error-border": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color error border"
+      },
+      "color-error-hover": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color error hover"
+      },
+      "color-warning": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color warning"
+      },
+      "color-warning-background": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color warning background"
+      },
+      "color-warning-border": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color warning border"
+      },
+      "color-warning-hover": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color warning hover"
+      },
+      "color-info": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color info"
+      },
+      "color-info-background": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color info background"
+      },
+      "color-info-border": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color info border"
+      },
+      "color-info-hover": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme color info hover"
+      },
+      "background": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme background"
+      },
+      "foreground": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme foreground"
+      },
+      "card": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme card"
+      },
+      "card-foreground": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme card foreground"
+      },
+      "popover": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme popover"
+      },
+      "popover-foreground": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme popover foreground"
+      },
+      "primary": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme primary"
+      },
+      "secondary": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme secondary"
+      },
+      "muted": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme muted"
+      },
+      "accent": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme accent"
+      },
+      "destructive": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme destructive"
+      },
+      "border": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme border"
+      },
+      "input": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme input"
+      },
+      "ring": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme ring"
+      },
+      "radius": {
+        "value": "var(--radius-lg)",
+        "type": "borderRadius",
+        "description": "Custom blue theme radius",
+        "aliases": [
+          "borderRadius.lg"
+        ],
+        "originalValue": "var(--radius-lg)"
+      },
+      "sidebar-background": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sidebar background"
+      },
+      "sidebar-foreground": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sidebar foreground"
+      },
+      "sidebar-primary": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sidebar primary"
+      },
+      "sidebar-primary-foreground": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sidebar primary foreground"
+      },
+      "sidebar-accent": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sidebar accent"
+      },
+      "sidebar-accent-foreground": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sidebar accent foreground"
+      },
+      "sidebar-border": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sidebar border"
+      },
+      "sidebar-ring": {
+        "value": "#your-color-here",
+        "type": "color",
+        "description": "Custom blue theme sidebar ring"
+      }
+    }
+  },
+  "cssTemplate": "\n/* Custom Theme Example */\n.theme-blue {\n    --gray-50: /* your HSL values */;\n  --gray-100: /* your HSL values */;\n  --gray-200: /* your HSL values */;\n  --gray-300: /* your HSL values */;\n  --gray-400: /* your HSL values */;\n  --gray-500: /* your HSL values */;\n  --gray-600: /* your HSL values */;\n  --gray-700: /* your HSL values */;\n  --gray-800: /* your HSL values */;\n  --gray-900: /* your HSL values */;\n  --gray-950: /* your HSL values */;\n  --blue-50: /* your HSL values */;\n  --blue-100: /* your HSL values */;\n  --blue-200: /* your HSL values */;\n  --blue-300: /* your HSL values */;\n  --blue-400: /* your HSL values */;\n  --blue-500: /* your HSL values */;\n  --blue-600: /* your HSL values */;\n  --blue-700: /* your HSL values */;\n  --blue-800: /* your HSL values */;\n  --blue-900: /* your HSL values */;\n  --blue-950: /* your HSL values */;\n  --red-50: /* your HSL values */;\n  --red-100: /* your HSL values */;\n  --red-200: /* your HSL values */;\n  --red-300: /* your HSL values */;\n  --red-400: /* your HSL values */;\n  --red-500: /* your HSL values */;\n  --red-600: /* your HSL values */;\n  --red-700: /* your HSL values */;\n  --red-800: /* your HSL values */;\n  --red-900: /* your HSL values */;\n  --red-950: /* your HSL values */;\n  --green-50: /* your HSL values */;\n  --green-100: /* your HSL values */;\n  --green-200: /* your HSL values */;\n  --green-300: /* your HSL values */;\n  --green-400: /* your HSL values */;\n  --green-500: /* your HSL values */;\n  --green-600: /* your HSL values */;\n  --green-700: /* your HSL values */;\n  --green-800: /* your HSL values */;\n  --green-900: /* your HSL values */;\n  --green-950: /* your HSL values */;\n  --amber-50: /* your HSL values */;\n  --amber-100: /* your HSL values */;\n  --amber-200: /* your HSL values */;\n  --amber-300: /* your HSL values */;\n  --amber-400: /* your HSL values */;\n  --amber-500: /* your HSL values */;\n  --amber-600: /* your HSL values */;\n  --amber-700: /* your HSL values */;\n  --amber-800: /* your HSL values */;\n  --amber-900: /* your HSL values */;\n  --amber-950: /* your HSL values */;\n  --orange-50: /* your HSL values */;\n  --orange-100: /* your HSL values */;\n  --orange-200: /* your HSL values */;\n  --orange-300: /* your HSL values */;\n  --orange-400: /* your HSL values */;\n  --orange-500: /* your HSL values */;\n  --orange-600: /* your HSL values */;\n  --orange-700: /* your HSL values */;\n  --orange-800: /* your HSL values */;\n  --orange-900: /* your HSL values */;\n  --orange-950: /* your HSL values */;\n  --purple-50: /* your HSL values */;\n  --purple-100: /* your HSL values */;\n  --purple-200: /* your HSL values */;\n  --purple-300: /* your HSL values */;\n  --purple-400: /* your HSL values */;\n  --purple-500: /* your HSL values */;\n  --purple-600: /* your HSL values */;\n  --purple-700: /* your HSL values */;\n  --purple-800: /* your HSL values */;\n  --purple-900: /* your HSL values */;\n  --purple-950: /* your HSL values */;\n  --indigo-50: /* your HSL values */;\n  --indigo-100: /* your HSL values */;\n  --indigo-200: /* your HSL values */;\n  --indigo-300: /* your HSL values */;\n  --indigo-400: /* your HSL values */;\n  --indigo-500: /* your HSL values */;\n  --indigo-600: /* your HSL values */;\n  --indigo-700: /* your HSL values */;\n  --indigo-800: /* your HSL values */;\n  --indigo-900: /* your HSL values */;\n  --indigo-950: /* your HSL values */;\n  --sky-50: /* your HSL values */;\n  --sky-100: /* your HSL values */;\n  --sky-200: /* your HSL values */;\n  --sky-300: /* your HSL values */;\n  --sky-400: /* your HSL values */;\n  --sky-500: /* your HSL values */;\n  --sky-600: /* your HSL values */;\n  --sky-700: /* your HSL values */;\n  --sky-800: /* your HSL values */;\n  --sky-900: /* your HSL values */;\n  --sky-950: /* your HSL values */;\n  --pink-50: /* your HSL values */;\n  --pink-100: /* your HSL values */;\n  --pink-200: /* your HSL values */;\n  --pink-300: /* your HSL values */;\n  --pink-400: /* your HSL values */;\n  --pink-500: /* your HSL values */;\n  --pink-600: /* your HSL values */;\n  --pink-700: /* your HSL values */;\n  --pink-800: /* your HSL values */;\n  --pink-900: /* your HSL values */;\n  --pink-950: /* your HSL values */;\n  --teal-50: /* your HSL values */;\n  --teal-100: /* your HSL values */;\n  --teal-200: /* your HSL values */;\n  --teal-300: /* your HSL values */;\n  --teal-400: /* your HSL values */;\n  --teal-500: /* your HSL values */;\n  --teal-600: /* your HSL values */;\n  --teal-700: /* your HSL values */;\n  --teal-800: /* your HSL values */;\n  --teal-900: /* your HSL values */;\n  --teal-950: /* your HSL values */;\n  --color-primary: /* your HSL values */;\n  --color-primary-hover: /* your HSL values */;\n  --color-primary-active: /* your HSL values */;\n  --color-primary-disabled: /* your HSL values */;\n  --color-primary-subtle: /* your HSL values */;\n  --color-text-primary: /* your HSL values */;\n  --color-text-secondary: /* your HSL values */;\n  --color-text-tertiary: /* your HSL values */;\n  --color-text-disabled: /* your HSL values */;\n  --color-text-inverse: /* your HSL values */;\n  --color-text-link: /* your HSL values */;\n  --color-text-link-hover: /* your HSL values */;\n  --color-background: /* your HSL values */;\n  --color-background-subtle: /* your HSL values */;\n  --color-surface: /* your HSL values */;\n  --color-surface-subtle: /* your HSL values */;\n  --color-surface-hover: /* your HSL values */;\n  --color-surface-pressed: /* your HSL values */;\n  --color-border: /* your HSL values */;\n  --color-border-subtle: /* your HSL values */;\n  --color-border-strong: /* your HSL values */;\n  --color-border-focus: /* your HSL values */;\n  --color-success: /* your HSL values */;\n  --color-success-background: /* your HSL values */;\n  --color-success-border: /* your HSL values */;\n  --color-success-hover: /* your HSL values */;\n  --color-error: /* your HSL values */;\n  --color-error-background: /* your HSL values */;\n  --color-error-border: /* your HSL values */;\n  --color-error-hover: /* your HSL values */;\n  --color-warning: /* your HSL values */;\n  --color-warning-background: /* your HSL values */;\n  --color-warning-border: /* your HSL values */;\n  --color-warning-hover: /* your HSL values */;\n  --color-info: /* your HSL values */;\n  --color-info-background: /* your HSL values */;\n  --color-info-border: /* your HSL values */;\n  --color-info-hover: /* your HSL values */;\n  --background: /* your HSL values */;\n  --foreground: /* your HSL values */;\n  --card: /* your HSL values */;\n  --card-foreground: /* your HSL values */;\n  --popover: /* your HSL values */;\n  --popover-foreground: /* your HSL values */;\n  --primary: /* your HSL values */;\n  --secondary: /* your HSL values */;\n  --muted: /* your HSL values */;\n  --accent: /* your HSL values */;\n  --destructive: /* your HSL values */;\n  --border: /* your HSL values */;\n  --input: /* your HSL values */;\n  --ring: /* your HSL values */;\n  --radius: var(--radius-lg);\n  --sidebar-background: /* your HSL values */;\n  --sidebar-foreground: /* your HSL values */;\n  --sidebar-primary: /* your HSL values */;\n  --sidebar-primary-foreground: /* your HSL values */;\n  --sidebar-accent: /* your HSL values */;\n  --sidebar-accent-foreground: /* your HSL values */;\n  --sidebar-border: /* your HSL values */;\n  --sidebar-ring: /* your HSL values */;\n}",
+  "figmaTokensStructure": {
+    "blue": {
+      "colors": "... your color tokens here ..."
+    },
+    "$themes": [
+      {
+        "id": "blue",
+        "name": "Blue",
+        "selectedTokenSets": {
+          "global": "enabled",
+          "blue": "enabled"
+        }
+      }
+    ]
+  }
+}

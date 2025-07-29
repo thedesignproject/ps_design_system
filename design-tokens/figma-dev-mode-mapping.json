@@ -1,0 +1,553 @@
+{
+  "version": "1.0",
+  "mappings": [
+    {
+      "figmaNodeId": "",
+      "componentName": "accordion",
+      "filePath": "src/components/ui/accordion.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/accordion"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "alert-dialog",
+      "filePath": "src/components/ui/alert-dialog.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/alert-dialog"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "alert",
+      "filePath": "src/components/ui/alert.tsx",
+      "props": [],
+      "variants": [
+        "variants",
+        "variant"
+      ],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/alert"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "aspect-ratio",
+      "filePath": "src/components/ui/aspect-ratio.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/aspect-ratio"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "avatar",
+      "filePath": "src/components/ui/avatar.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/avatar"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "badge",
+      "filePath": "src/components/ui/badge.tsx",
+      "props": [],
+      "variants": [
+        "variants",
+        "variant"
+      ],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/badge"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "breadcrumb",
+      "filePath": "src/components/ui/breadcrumb.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/breadcrumb"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "button",
+      "filePath": "src/components/ui/button.tsx",
+      "props": [
+        "asChild"
+      ],
+      "variants": [
+        "variants",
+        "variant"
+      ],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/button"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "calendar",
+      "filePath": "src/components/ui/calendar.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/calendar"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "card",
+      "filePath": "src/components/ui/card.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/card"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "carousel",
+      "filePath": "src/components/ui/carousel.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/carousel"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "chart",
+      "filePath": "src/components/ui/chart.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/chart"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "checkbox",
+      "filePath": "src/components/ui/checkbox.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/checkbox"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "collapsible",
+      "filePath": "src/components/ui/collapsible.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/collapsible"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "command",
+      "filePath": "src/components/ui/command.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/command"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "context-menu",
+      "filePath": "src/components/ui/context-menu.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/context-menu"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "date-picker",
+      "filePath": "src/components/ui/date-picker.tsx",
+      "props": [
+        "date",
+        "onDateChange",
+        "placeholder",
+        "disabled",
+        "className"
+      ],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/date-picker"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "dialog",
+      "filePath": "src/components/ui/dialog.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/dialog"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "drawer",
+      "filePath": "src/components/ui/drawer.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/drawer"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "dropdown-menu",
+      "filePath": "src/components/ui/dropdown-menu.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/dropdown-menu"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "form",
+      "filePath": "src/components/ui/form.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/form"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "hover-card",
+      "filePath": "src/components/ui/hover-card.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/hover-card"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "input-otp",
+      "filePath": "src/components/ui/input-otp.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/input-otp"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "input",
+      "filePath": "src/components/ui/input.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/input"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "label",
+      "filePath": "src/components/ui/label.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/label"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "loading",
+      "filePath": "src/components/ui/loading.tsx",
+      "props": [
+        "text",
+        "showText"
+      ],
+      "variants": [
+        "variants",
+        "size"
+      ],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/loading"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "menubar",
+      "filePath": "src/components/ui/menubar.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/menubar"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "navigation-menu",
+      "filePath": "src/components/ui/navigation-menu.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/navigation-menu"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "pagination",
+      "filePath": "src/components/ui/pagination.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/pagination"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "popover",
+      "filePath": "src/components/ui/popover.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/popover"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "progress",
+      "filePath": "src/components/ui/progress.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/progress"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "radio-group",
+      "filePath": "src/components/ui/radio-group.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/radio-group"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "resizable",
+      "filePath": "src/components/ui/resizable.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/resizable"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "scroll-area",
+      "filePath": "src/components/ui/scroll-area.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/scroll-area"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "search",
+      "filePath": "src/components/ui/search.tsx",
+      "props": [
+        "onClear",
+        "showClearButton"
+      ],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/search"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "select",
+      "filePath": "src/components/ui/select.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/select"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "separator",
+      "filePath": "src/components/ui/separator.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/separator"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "sheet",
+      "filePath": "src/components/ui/sheet.tsx",
+      "props": [],
+      "variants": [
+        "variants",
+        "side"
+      ],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/sheet"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "sidebar",
+      "filePath": "src/components/ui/sidebar.tsx",
+      "props": [],
+      "variants": [
+        "variants",
+        "variant"
+      ],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/sidebar"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "skeleton",
+      "filePath": "src/components/ui/skeleton.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/skeleton"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "slider",
+      "filePath": "src/components/ui/slider.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/slider"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "sonner",
+      "filePath": "src/components/ui/sonner.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/sonner"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "switch",
+      "filePath": "src/components/ui/switch.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/switch"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "table",
+      "filePath": "src/components/ui/table.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/table"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "tabs",
+      "filePath": "src/components/ui/tabs.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/tabs"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "textarea",
+      "filePath": "src/components/ui/textarea.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/textarea"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "toast",
+      "filePath": "src/components/ui/toast.tsx",
+      "props": [],
+      "variants": [
+        "variants",
+        "variant"
+      ],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/toast"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "toaster",
+      "filePath": "src/components/ui/toaster.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/toaster"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "toggle-group",
+      "filePath": "src/components/ui/toggle-group.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/toggle-group"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "toggle",
+      "filePath": "src/components/ui/toggle.tsx",
+      "props": [],
+      "variants": [
+        "variants",
+        "variant"
+      ],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/toggle"
+    },
+    {
+      "figmaNodeId": "",
+      "componentName": "tooltip",
+      "filePath": "src/components/ui/tooltip.tsx",
+      "props": [],
+      "variants": [],
+      "documentation": null,
+      "storybook": null,
+      "playground": "/components/tooltip"
+    }
+  ]
+}

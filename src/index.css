@@ -1,0 +1,447 @@
+/* Import documentation-specific styles */
+@import './docs.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ====================================================
+   DESIGN SYSTEM DEFINITIONS
+   These can be customized per client/project
+   ==================================================== */
+
+@layer base {
+  :root {
+    /* ===== DESIGN SYSTEM FONTS (Customizable) ===== */
+    --ds-font-sans: 'Inter', system-ui, sans-serif;
+    --ds-font-heading: 'Poppins', sans-serif;  
+    --ds-font-mono: 'Fira Code', ui-monospace, monospace;
+    --ds-font-display: 'Playfair Display', serif;
+    
+    /* Design System Font Weights */
+    --ds-font-weight-thin: 100;
+    --ds-font-weight-light: 300;
+    --ds-font-weight-regular: 400;
+    --ds-font-weight-medium: 500;
+    --ds-font-weight-semibold: 600;
+    --ds-font-weight-bold: 700;
+    --ds-font-weight-black: 900;
+    
+    /* Design System Letter Spacing */
+    --ds-letter-spacing-tight: -0.025em;
+    --ds-letter-spacing-normal: 0em;
+    --ds-letter-spacing-wide: 0.025em;
+    
+    /* Design System Line Heights */
+    --ds-line-height-tight: 1.2;
+    --ds-line-height-normal: 1.5;
+    --ds-line-height-loose: 1.8;
+
+    /* ===== CORE TOKENS (Primitive Values) ===== */
+    
+    /* Core Color Palette - Gray/Neutral */
+    --gray-50: #f9fafb;
+    --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb;
+    --gray-300: #d1d5db;
+    --gray-400: #9ca3af;
+    --gray-500: #6b7280;
+    --gray-600: #4b5563;
+    --gray-700: #374151;
+    --gray-800: #1f2937;
+    --gray-900: #111827;
+    --gray-950: #030712;
+
+    /* Core Color Palette - Blue */
+    --blue-50: #eff6ff;
+    --blue-100: #dbeafe;
+    --blue-200: #bfdbfe;
+    --blue-300: #93c5fd;
+    --blue-400: #60a5fa;
+    --blue-500: #3b82f6;
+    --blue-600: #2563eb;
+    --blue-700: #1d4ed8;
+    --blue-800: #1e40af;
+    --blue-900: #1e3a8a;
+    --blue-950: #172554;
+
+    /* Core Color Palette - Red */
+    --red-50: #fef2f2;
+    --red-100: #fee2e2;
+    --red-200: #fecaca;
+    --red-300: #fca5a5;
+    --red-400: #f87171;
+    --red-500: #ef4444;
+    --red-600: #dc2626;
+    --red-700: #b91c1c;
+    --red-800: #991b1b;
+    --red-900: #7f1d1d;
+    --red-950: #450a0a;
+
+    /* Core Color Palette - Green */
+    --green-50: #f0fdf4;
+    --green-100: #dcfce7;
+    --green-200: #bbf7d0;
+    --green-300: #86efac;
+    --green-400: #4ade80;
+    --green-500: #22c55e;
+    --green-600: #16a34a;
+    --green-700: #15803d;
+    --green-800: #166534;
+    --green-900: #14532d;
+    --green-950: #052e16;
+
+    /* Core Color Palette - Amber */
+    --amber-50: #fffbeb;
+    --amber-100: #fef3c7;
+    --amber-200: #fde68a;
+    --amber-300: #fcd34d;
+    --amber-400: #fbbf24;
+    --amber-500: #f59e0b;
+    --amber-600: #d97706;
+    --amber-700: #b45309;
+    --amber-800: #92400e;
+    --amber-900: #78350f;
+    --amber-950: #451a03;
+
+    /* Core Color Palette - Orange */
+    --orange-50: #fff7ed;
+    --orange-100: #ffedd5;
+    --orange-200: #fed7aa;
+    --orange-300: #fdba74;
+    --orange-400: #fb923c;
+    --orange-500: #f97316;
+    --orange-600: #ea580c;
+    --orange-700: #c2410c;
+    --orange-800: #9a3412;
+    --orange-900: #7c2d12;
+    --orange-950: #431407;
+
+    /* Core Color Palette - Purple */
+    --purple-50: #faf5ff;
+    --purple-100: #f3e8ff;
+    --purple-200: #e9d5ff;
+    --purple-300: #d8b4fe;
+    --purple-400: #c084fc;
+    --purple-500: #a855f7;
+    --purple-600: #9333ea;
+    --purple-700: #7c3aed;
+    --purple-800: #6b21a8;
+    --purple-900: #581c87;
+    --purple-950: #3b0764;
+
+    /* Core Color Palette - Indigo */
+    --indigo-50: #eef2ff;
+    --indigo-100: #e0e7ff;
+    --indigo-200: #c7d2fe;
+    --indigo-300: #a5b4fc;
+    --indigo-400: #818cf8;
+    --indigo-500: #6366f1;
+    --indigo-600: #4f46e5;
+    --indigo-700: #4338ca;
+    --indigo-800: #3730a3;
+    --indigo-900: #312e81;
+    --indigo-950: #1e1b4b;
+
+    /* Core Color Palette - Sky */
+    --sky-50: #f0f9ff;
+    --sky-100: #e0f2fe;
+    --sky-200: #bae6fd;
+    --sky-300: #7dd3fc;
+    --sky-400: #38bdf8;
+    --sky-500: #0ea5e9;
+    --sky-600: #0284c7;
+    --sky-700: #0369a1;
+    --sky-800: #075985;
+    --sky-900: #0c4a6e;
+    --sky-950: #082f49;
+
+    /* Core Color Palette - Pink */
+    --pink-50: #fdf2f8;
+    --pink-100: #fce7f3;
+    --pink-200: #fbcfe8;
+    --pink-300: #f9a8d4;
+    --pink-400: #f472b6;
+    --pink-500: #ec4899;
+    --pink-600: #db2777;
+    --pink-700: #be185d;
+    --pink-800: #9d174d;
+    --pink-900: #831843;
+    --pink-950: #500724;
+
+    /* Core Color Palette - Teal */
+    --teal-50: #f0fdfa;
+    --teal-100: #ccfbf1;
+    --teal-200: #99f6e4;
+    --teal-300: #5eead4;
+    --teal-400: #2dd4bf;
+    --teal-500: #14b8a6;
+    --teal-600: #0d9488;
+    --teal-700: #0f766e;
+    --teal-800: #115e59;
+    --teal-900: #134e4a;
+    --teal-950: #042f2e;
+
+    /* Core Spacing Scale */
+    --space-0: 0rem;
+    --space-px: 0.0625rem;
+    --space-0-5: 0.125rem;
+    --space-1: 0.25rem;
+    --space-1-5: 0.375rem;
+    --space-2: 0.5rem;
+    --space-2-5: 0.625rem;
+    --space-3: 0.75rem;
+    --space-3-5: 0.875rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-7: 1.75rem;
+    --space-8: 2rem;
+    --space-9: 2.25rem;
+    --space-10: 2.5rem;
+    --space-11: 2.75rem;
+    --space-12: 3rem;
+    --space-14: 3.5rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+    --space-28: 7rem;
+    --space-32: 8rem;
+    --space-36: 9rem;
+    --space-40: 10rem;
+    --space-44: 11rem;
+    --space-48: 12rem;
+    --space-52: 13rem;
+    --space-56: 14rem;
+    --space-60: 15rem;
+    --space-64: 16rem;
+    --space-72: 18rem;
+    --space-80: 20rem;
+    --space-96: 24rem;
+
+    /* Core Border Radius */
+    --radius-none: 0rem;
+    --radius-sm: 0.125rem;
+    --radius-base: 0.25rem;
+    --radius-md: 0.375rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
+    --radius-full: 9999px;
+
+    /* ===== BEHAVIORAL/SEMANTIC TOKENS (Light Mode) ===== */
+    
+    /* Brand Colors */
+    --color-primary: var(--blue-600);
+    --color-primary-hover: var(--blue-700);
+    --color-primary-active: var(--blue-800);
+    --color-primary-disabled: var(--blue-300);
+    --color-primary-subtle: var(--blue-50);
+
+    /* Text Colors */
+    --color-text-primary: var(--gray-900);
+    --color-text-secondary: var(--gray-700);
+    --color-text-tertiary: var(--gray-500);
+    --color-text-disabled: var(--gray-400);
+    --color-text-inverse: var(--gray-50);
+    --color-text-link: var(--blue-600);
+    --color-text-link-hover: var(--blue-700);
+
+    /* Background Colors */
+    --color-background: #ffffff;
+    --color-background-subtle: var(--gray-50);
+    --color-surface: #ffffff;
+    --color-surface-subtle: var(--gray-50);
+    --color-surface-hover: var(--gray-100);
+    --color-surface-pressed: var(--gray-200);
+
+    /* Border Colors */
+    --color-border: var(--gray-200);
+    --color-border-subtle: var(--gray-100);
+    --color-border-strong: var(--gray-300);
+    --color-border-focus: var(--blue-500);
+
+    /* Feedback Colors - Success */
+    --color-success: var(--green-600);
+    --color-success-background: var(--green-50);
+    --color-success-border: var(--green-200);
+    --color-success-hover: var(--green-700);
+
+    /* Feedback Colors - Error */
+    --color-error: var(--red-600);
+    --color-error-background: var(--red-50);
+    --color-error-border: var(--red-200);
+    --color-error-hover: var(--red-700);
+
+    /* Feedback Colors - Warning */
+    --color-warning: var(--amber-600);
+    --color-warning-background: var(--amber-50);
+    --color-warning-border: var(--amber-200);
+    --color-warning-hover: var(--amber-700);
+
+    /* Feedback Colors - Info */
+    --color-info: var(--blue-600);
+    --color-info-background: var(--blue-50);
+    --color-info-border: var(--blue-200);
+    --color-info-hover: var(--blue-700);
+
+    /* Legacy Tokens (for backward compatibility) */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: var(--radius-lg);
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* ===== BEHAVIORAL/SEMANTIC TOKENS (Dark Mode) ===== */
+    
+    /* Brand Colors */
+    --color-primary: var(--blue-600);
+    --color-primary-hover: var(--blue-700);
+    --color-primary-active: var(--blue-800);
+    --color-primary-disabled: var(--blue-300);
+    --color-primary-subtle: var(--blue-50);
+
+    /* Text Colors */
+    --color-text-primary: var(--gray-50);
+    --color-text-secondary: var(--gray-300);
+    --color-text-tertiary: var(--gray-500);
+    --color-text-disabled: var(--gray-600);
+    --color-text-inverse: var(--gray-900);
+    --color-text-link: var(--blue-400);
+    --color-text-link-hover: var(--blue-300);
+
+    /* Background Colors */
+    --color-background: var(--gray-950);
+    --color-background-subtle: var(--gray-900);
+    --color-surface: var(--gray-900);
+    --color-surface-subtle: var(--gray-800);
+    --color-surface-hover: var(--gray-800);
+    --color-surface-pressed: var(--gray-700);
+
+    /* Border Colors */
+    --color-border: var(--gray-700);
+    --color-border-subtle: var(--gray-800);
+    --color-border-strong: var(--gray-600);
+    --color-border-focus: var(--blue-500);
+
+    /* Feedback Colors - Success */
+    --color-success: var(--green-400);
+    --color-success-background: var(--green-950);
+    --color-success-border: var(--green-800);
+    --color-success-hover: var(--green-300);
+
+    /* Feedback Colors - Error */
+    --color-error: var(--red-400);
+    --color-error-background: var(--red-950);
+    --color-error-border: var(--red-800);
+    --color-error-hover: var(--red-300);
+
+    /* Feedback Colors - Warning */
+    --color-warning: var(--amber-400);
+    --color-warning-background: var(--amber-950);
+    --color-warning-border: var(--amber-800);
+    --color-warning-hover: var(--amber-300);
+
+    /* Feedback Colors - Info */
+    --color-info: var(--blue-400);
+    --color-info-background: var(--blue-950);
+    --color-info-border: var(--blue-800);
+    --color-info-hover: var(--blue-300);
+
+    /* Legacy Tokens (for backward compatibility) */
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224 71.4% 4.1%;
+    --sidebar-primary-foreground: 210 20% 98%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+}
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* ====================================================
+   DESIGN SYSTEM FONT UTILITIES
+   Use these classes in your components
+   ==================================================== */
+
+@layer utilities {
+  /* Design System Font Families */
+  .font-ds-sans { font-family: var(--ds-font-sans); }
+  .font-ds-heading { font-family: var(--ds-font-heading); }
+  .font-ds-mono { font-family: var(--ds-font-mono); }
+  .font-ds-display { font-family: var(--ds-font-display); }
+  
+  /* Design System Font Weights */
+  .font-ds-thin { font-weight: var(--ds-font-weight-thin); }
+  .font-ds-light { font-weight: var(--ds-font-weight-light); }
+  .font-ds-regular { font-weight: var(--ds-font-weight-regular); }
+  .font-ds-medium { font-weight: var(--ds-font-weight-medium); }
+  .font-ds-semibold { font-weight: var(--ds-font-weight-semibold); }
+  .font-ds-bold { font-weight: var(--ds-font-weight-bold); }
+  .font-ds-black { font-weight: var(--ds-font-weight-black); }
+  
+  /* Design System Letter Spacing */
+  .tracking-ds-tight { letter-spacing: var(--ds-letter-spacing-tight); }
+  .tracking-ds-normal { letter-spacing: var(--ds-letter-spacing-normal); }
+  .tracking-ds-wide { letter-spacing: var(--ds-letter-spacing-wide); }
+  
+  /* Design System Line Heights */
+  .leading-ds-tight { line-height: var(--ds-line-height-tight); }
+  .leading-ds-normal { line-height: var(--ds-line-height-normal); }
+  .leading-ds-loose { line-height: var(--ds-line-height-loose); }
+}
+

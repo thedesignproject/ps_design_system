@@ -1,0 +1,43 @@
+{
+  "name": "@tdp/cli",
+  "version": "1.0.0",
+  "description": "CLI tool for installing TDP Design System components",
+  "main": "dist/index.js",
+  "bin": {
+    "tdp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc && npm run copy-templates",
+    "copy-templates": "cp -r templates dist/",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "test": "node dist/index.js --help"
+  },
+  "keywords": [
+    "design-system",
+    "cli",
+    "react",
+    "typescript",
+    "tailwind"
+  ],
+  "author": "The Design Project",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.6",
+    "fs-extra": "^11.1.1",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/inquirer": "^8.2.6",
+    "@types/fs-extra": "^11.0.4",
+    "typescript": "^5.0.0"
+  },
+  "files": [
+    "dist",
+    "templates",
+    "README.md"
+  ]
+} 

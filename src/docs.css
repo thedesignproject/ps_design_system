@@ -1,0 +1,108 @@
+/* ====================================================
+   DOCUMENTATION WEBSITE FONTS & STYLES
+   These are FIXED and should NOT change per client
+   ==================================================== */
+
+@layer utilities {
+  /* Fixed Documentation Typography - DO NOT CHANGE */
+  .text-lg, .text-xl, .text-2xl, .text-3xl, .text-4xl, .text-5xl, .text-6xl, .text-7xl, .text-8xl, .text-9xl {
+    font-family: 'Halyard Display', sans-serif !important;
+    font-weight: 400;
+  }
+
+  /* Documentation headings - FIXED FONT */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Halyard Display', sans-serif !important;
+    font-weight: 400;
+  }
+
+  /* Documentation code - FIXED FONT */
+  .font-mono, code, pre {
+    font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace !important;
+  }
+  
+  /* Override any design system fonts in documentation */
+  .docs-container, .docs-container * {
+    font-family: 'Geist', system-ui, sans-serif !important;
+  }
+  
+  .docs-container h1, .docs-container h2, .docs-container h3, 
+  .docs-container h4, .docs-container h5, .docs-container h6,
+  .docs-container .text-lg, .docs-container .text-xl, 
+  .docs-container .text-2xl, .docs-container .text-3xl,
+  .docs-container .text-4xl, .docs-container .text-5xl {
+    font-family: 'Halyard Display', sans-serif !important;
+  }
+}
+
+/* Custom documentation layout styles */
+.docs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.docs-sidebar {
+  width: 250px;
+  position: fixed;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.docs-content {
+  margin-left: 270px;
+  min-height: 100vh;
+}
+
+/* Documentation-specific component showcase styles */
+.component-showcase {
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin: 1rem 0;
+}
+
+.component-preview {
+  background: hsl(var(--muted));
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Code block styling for documentation */
+.docs-code-block {
+  background: hsl(var(--muted));
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  padding: 1rem;
+  overflow-x: auto;
+  font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+/* Documentation navigation */
+.docs-nav {
+  border-bottom: 1px solid hsl(var(--border));
+  background: hsl(var(--background));
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* Documentation-specific responsive styles */
+@media (max-width: 768px) {
+  .docs-sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .docs-content {
+    margin-left: 0;
+  }
+  
+  .docs-container {
+    padding: 1rem;
+  }
+} 

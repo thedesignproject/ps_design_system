@@ -1,0 +1,152 @@
+{
+  "typographyStyles": {
+    "display": {
+      "display-xxl": {
+        "displayName": "Display XXL",
+        "description": "Largest display text for hero sections",
+        "fontSize": "9xl",
+        "fontWeight": "black",
+        "lineHeight": "tight",
+        "letterSpacing": "tight",
+        "usage": ["Hero headlines", "Landing page titles"],
+        "category": "Display"
+      },
+      "display-xl": {
+        "displayName": "Display XL", 
+        "description": "Extra large display text",
+        "fontSize": "8xl",
+        "fontWeight": "black",
+        "lineHeight": "tight",
+        "letterSpacing": "tight",
+        "usage": ["Section heroes", "Feature headlines"],
+        "category": "Display"
+      },
+      "display-large": {
+        "displayName": "Display Large",
+        "description": "Large display text",
+        "fontSize": "7xl",
+        "fontWeight": "extrabold",
+        "lineHeight": "tight", 
+        "letterSpacing": "tight",
+        "usage": ["Page titles", "Modal headers"],
+        "category": "Display"
+      },
+      "display-medium": {
+        "displayName": "Display Medium",
+        "description": "Medium display text",
+        "fontSize": "6xl",
+        "fontWeight": "extrabold", 
+        "lineHeight": "tight",
+        "letterSpacing": "tight",
+        "usage": ["Card headers", "Dashboard titles"],
+        "category": "Display"
+      },
+      "display-small": {
+        "displayName": "Display Small",
+        "description": "Small display text",
+        "fontSize": "5xl",
+        "fontWeight": "bold",
+        "lineHeight": "tight",
+        "letterSpacing": "normal",
+        "usage": ["Component titles", "Widget headers"],
+        "category": "Display"
+      }
+    },
+    "headings": {
+      "heading-large": {
+        "displayName": "Heading Large",
+        "description": "Large section headings",
+        "fontSize": "4xl", 
+        "fontWeight": "bold",
+        "lineHeight": "snug",
+        "letterSpacing": "normal",
+        "usage": ["Section headings", "Article titles"],
+        "category": "Heading"
+      },
+      "heading-medium": {
+        "displayName": "Heading Medium",
+        "description": "Medium section headings", 
+        "fontSize": "3xl",
+        "fontWeight": "semibold",
+        "lineHeight": "snug",
+        "letterSpacing": "normal",
+        "usage": ["Subsection headings", "Card titles"],
+        "category": "Heading"
+      },
+      "heading-small": {
+        "displayName": "Heading Small",
+        "description": "Small section headings",
+        "fontSize": "2xl",
+        "fontWeight": "semibold", 
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "usage": ["Component headings", "Form sections"],
+        "category": "Heading"
+      }
+    },
+    "body": {
+      "text-xl": {
+        "displayName": "Text XL",
+        "description": "Large body text",
+        "fontSize": "xl",
+        "fontWeight": "medium",
+        "lineHeight": "normal", 
+        "letterSpacing": "normal",
+        "usage": ["Lead paragraphs", "Intro text"],
+        "category": "Body"
+      },
+      "text-large": {
+        "displayName": "Text Large",
+        "description": "Large body text",
+        "fontSize": "lg",
+        "fontWeight": "normal",
+        "lineHeight": "normal",
+        "letterSpacing": "normal", 
+        "usage": ["Prominent body text", "Callouts"],
+        "category": "Body"
+      },
+      "text-base": {
+        "displayName": "Text Base",
+        "description": "Default body text",
+        "fontSize": "base",
+        "fontWeight": "normal",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "usage": ["Body paragraphs", "Default text"],
+        "category": "Body"
+      },
+      "text-small": {
+        "displayName": "Text Small", 
+        "description": "Small body text",
+        "fontSize": "sm",
+        "fontWeight": "normal",
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "usage": ["Secondary text", "Captions"],
+        "category": "Body"
+      },
+      "text-xs": {
+        "displayName": "Text XS",
+        "description": "Extra small text",
+        "fontSize": "xs",
+        "fontWeight": "normal", 
+        "lineHeight": "normal",
+        "letterSpacing": "normal",
+        "usage": ["Fine print", "Metadata", "Labels"],
+        "category": "Body"
+      }
+    }
+  },
+  
+  "letterSpacingMapping": {
+    "tight": "-0.025em",
+    "normal": "0em",
+    "wide": "0.025em"
+  },
+  
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2024-01-15",
+    "description": "Composite typography styles that combine individual design tokens into cohesive text styles"
+  }
+} 
