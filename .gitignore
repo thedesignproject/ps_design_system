@@ -22,3 +22,44 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Claude AI files
+.claude.json
+.claude.json.backup
+
+# Shell history
+.zsh_history
+.bash_history
+
+# Personal documents and media files
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp4
+*.mov
+*.avi
+*.zip
+*.ai
+*.svg
+
+# System files
+.DS_Store
+*/.DS_Store
+
+# npm cache and logs
+~/.npm/_logs/
+.npm/_logs/
+
+# Temporary files
+/tmp/
+*.tmp
+*.temp
+
+# Document folders that shouldn't be in git
+~/Documents/
+Documents/
+
+# Stats and session files
+statsig.session_id.*
