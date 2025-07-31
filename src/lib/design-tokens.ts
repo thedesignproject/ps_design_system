@@ -64,7 +64,7 @@ function parseCoreColors(): ColorToken[] {
   // Define PureSpectrum colors from tokens.css
   const pureSpectrumColors = [
     // Neutral Colors
-    { name: 'Neutral 50', value: '#000000', class: 'bg-gray-50', category: 'Neutral', cssVar: 'var(--gray-50)' },
+    { name: 'Neutral 50', value: '#FCFCFD', class: 'bg-gray-50', category: 'Neutral', cssVar: 'var(--gray-50)' },
     { name: 'Neutral 100', value: '#f1f2f4', class: 'bg-gray-100', category: 'Neutral', cssVar: 'var(--gray-100)' },
     { name: 'Neutral 200', value: '#dfe2e7', class: 'bg-gray-200', category: 'Neutral', cssVar: 'var(--gray-200)' },
     { name: 'Neutral 300', value: '#c2c8d1', class: 'bg-gray-300', category: 'Neutral', cssVar: 'var(--gray-300)' },
@@ -127,9 +127,9 @@ function parseCoreColors(): ColorToken[] {
   ];
 
   pureSpectrumColors.forEach(colorData => {
-    colors.push({
+        colors.push({
       name: colorData.name,
-      value: colorData.value,
+          value: colorData.value,
       class: colorData.class,
       category: colorData.category,
       cssVar: colorData.cssVar
@@ -141,84 +141,42 @@ function parseCoreColors(): ColorToken[] {
 
 function parseSemanticTokens(): SemanticToken[] {
   const semanticTokens: SemanticToken[] = [];
-  const lightColors = figmaTokens.light.colors;
-  const darkColors = figmaTokens.dark.colors;
 
-  // Define semantic token categories and their mappings
+  // Define PureSpectrum semantic token mappings
   const semanticMappings = [
-    // Brand Colors
-    { key: 'color-primary', name: 'Primary', usage: 'Main brand color, CTA buttons', category: 'Brand' },
-    { key: 'color-primary-hover', name: 'Primary Hover', usage: 'Primary button hover state', category: 'Brand' },
-    { key: 'color-primary-active', name: 'Primary Active', usage: 'Primary button active state', category: 'Brand' },
-    { key: 'color-primary-disabled', name: 'Primary Disabled', usage: 'Primary button disabled state', category: 'Brand' },
-    { key: 'color-primary-subtle', name: 'Primary Subtle', usage: 'Primary background tints', category: 'Brand' },
+    // Alert Colors
+    { key: 'alert-05', name: 'Alert 05', usage: 'Alert color lightest shade', category: 'Alert', cssVar: 'var(--alert-05)' },
+    { key: 'alert-10', name: 'Alert 10', usage: 'Alert color light shade', category: 'Alert', cssVar: 'var(--alert-10)' },
+    { key: 'alert-30', name: 'Alert 30', usage: 'Alert color medium-light shade', category: 'Alert', cssVar: 'var(--alert-30)' },
+    { key: 'alert-50', name: 'Alert 50', usage: 'Alert color base shade', category: 'Alert', cssVar: 'var(--alert-50)' },
+    { key: 'alert-70', name: 'Alert 70', usage: 'Alert color medium-dark shade', category: 'Alert', cssVar: 'var(--alert-70)' },
+    { key: 'alert-90', name: 'Alert 90', usage: 'Alert color darkest shade', category: 'Alert', cssVar: 'var(--alert-90)' },
 
-    // Text Colors
-    { key: 'color-text-primary', name: 'Text Primary', usage: 'Main body text, headings', category: 'Text' },
-    { key: 'color-text-secondary', name: 'Text Secondary', usage: 'Secondary text, descriptions', category: 'Text' },
-    { key: 'color-text-tertiary', name: 'Text Tertiary', usage: 'Placeholder text, captions', category: 'Text' },
-    { key: 'color-text-disabled', name: 'Text Disabled', usage: 'Disabled text labels', category: 'Text' },
-    { key: 'color-text-inverse', name: 'Text Inverse', usage: 'Text on dark backgrounds', category: 'Text' },
-    { key: 'color-text-link', name: 'Text Link', usage: 'Link text', category: 'Text' },
-    { key: 'color-text-link-hover', name: 'Text Link Hover', usage: 'Link text hover state', category: 'Text' },
+    // Warning Colors
+    { key: 'warning-05', name: 'Warning 05', usage: 'Warning color lightest shade', category: 'Warning', cssVar: 'var(--warning-05)' },
+    { key: 'warning-30', name: 'Warning 30', usage: 'Warning color light shade', category: 'Warning', cssVar: 'var(--warning-30)' },
+    { key: 'warning-50', name: 'Warning 50', usage: 'Warning color base shade', category: 'Warning', cssVar: 'var(--warning-50)' },
+    { key: 'warning-70', name: 'Warning 70', usage: 'Warning color medium-dark shade', category: 'Warning', cssVar: 'var(--warning-70)' },
+    { key: 'warning-90', name: 'Warning 90', usage: 'Warning color darkest shade', category: 'Warning', cssVar: 'var(--warning-90)' },
 
-    // Background Colors
-    { key: 'color-background', name: 'Background', usage: 'Main page background', category: 'Background' },
-    { key: 'color-background-subtle', name: 'Background Subtle', usage: 'Subtle background areas', category: 'Background' },
-    { key: 'color-surface', name: 'Surface', usage: 'Cards, modals, dropdowns', category: 'Background' },
-    { key: 'color-surface-subtle', name: 'Surface Subtle', usage: 'Secondary surface areas', category: 'Background' },
-    { key: 'color-surface-hover', name: 'Surface Hover', usage: 'Hoverable surface areas', category: 'Background' },
-    { key: 'color-surface-pressed', name: 'Surface Pressed', usage: 'Pressed surface areas', category: 'Background' },
-
-    // Border Colors
-    { key: 'color-border', name: 'Border', usage: 'Default borders', category: 'Border' },
-    { key: 'color-border-subtle', name: 'Border Subtle', usage: 'Subtle dividers', category: 'Border' },
-    { key: 'color-border-strong', name: 'Border Strong', usage: 'Emphasized borders', category: 'Border' },
-    { key: 'color-border-focus', name: 'Border Focus', usage: 'Focus ring borders', category: 'Border' },
-
-    // Success
-    { key: 'color-success', name: 'Success', usage: 'Success messages', category: 'Success' },
-    { key: 'color-success-background', name: 'Success Background', usage: 'Success alert backgrounds', category: 'Success' },
-    { key: 'color-success-border', name: 'Success Border', usage: 'Success alert borders', category: 'Success' },
-    { key: 'color-success-hover', name: 'Success Hover', usage: 'Success button hover', category: 'Success' },
-
-    // Error
-    { key: 'color-error', name: 'Error', usage: 'Error messages', category: 'Error' },
-    { key: 'color-error-background', name: 'Error Background', usage: 'Error alert backgrounds', category: 'Error' },
-    { key: 'color-error-border', name: 'Error Border', usage: 'Error alert borders', category: 'Error' },
-    { key: 'color-error-hover', name: 'Error Hover', usage: 'Error button hover', category: 'Error' },
-
-    // Warning
-    { key: 'color-warning', name: 'Warning', usage: 'Warning messages', category: 'Warning' },
-    { key: 'color-warning-background', name: 'Warning Background', usage: 'Warning alert backgrounds', category: 'Warning' },
-    { key: 'color-warning-border', name: 'Warning Border', usage: 'Warning alert borders', category: 'Warning' },
-    { key: 'color-warning-hover', name: 'Warning Hover', usage: 'Warning button hover', category: 'Warning' },
-
-    // Info
-    { key: 'color-info', name: 'Info', usage: 'Info messages', category: 'Info' },
-    { key: 'color-info-background', name: 'Info Background', usage: 'Info alert backgrounds', category: 'Info' },
-    { key: 'color-info-border', name: 'Info Border', usage: 'Info alert borders', category: 'Info' },
-    { key: 'color-info-hover', name: 'Info Hover', usage: 'Info button hover', category: 'Info' },
+    // Success Colors
+    { key: 'success-05', name: 'Success 05', usage: 'Success color lightest shade', category: 'Success', cssVar: 'var(--success-05)' },
+    { key: 'success-10', name: 'Success 10', usage: 'Success color light shade', category: 'Success', cssVar: 'var(--success-10)' },
+    { key: 'success-30', name: 'Success 30', usage: 'Success color medium-light shade', category: 'Success', cssVar: 'var(--success-30)' },
+    { key: 'success-50', name: 'Success 50', usage: 'Success color base shade', category: 'Success', cssVar: 'var(--success-50)' },
+    { key: 'success-65', name: 'Success 65', usage: 'Success color medium shade', category: 'Success', cssVar: 'var(--success-65)' },
+    { key: 'success-120', name: 'Success 120', usage: 'Success color dark shade', category: 'Success', cssVar: 'var(--success-120)' },
   ];
 
   semanticMappings.forEach(mapping => {
-    const lightToken = lightColors[mapping.key];
-    const darkToken = darkColors[mapping.key];
-    
-    if (lightToken && darkToken) {
-      // Extract color references from var() values
-      const lightRef = lightToken.value.match(/var\(--([^)]+)\)/)?.[1] || lightToken.value;
-      const darkRef = darkToken.value.match(/var\(--([^)]+)\)/)?.[1] || darkToken.value;
-      
-      semanticTokens.push({
-        name: mapping.name,
-        token: `--${mapping.key}`,
-        light: lightRef.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase()),
-        dark: darkRef.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase()),
-        usage: mapping.usage,
-        category: mapping.category
-      });
-    }
+    semanticTokens.push({
+      name: mapping.name,
+      token: mapping.cssVar,
+      light: mapping.name,
+      dark: mapping.name,
+      usage: mapping.usage,
+      category: mapping.category
+    });
   });
 
   return semanticTokens;
@@ -380,3 +338,26 @@ export function getSemanticTokensByCategory() {
     return acc;
   }, {} as Record<string, SemanticToken[]>);
 } 
+
+// Export the designTokens object expected by ColorsPage.tsx
+export const designTokens = {
+  colors: {
+    neutral: parseCoreColors().filter(color => color.category === 'Neutral'),
+    'light-blue': parseCoreColors().filter(color => color.category === 'Light Blue'),
+    'ocean-blue': parseCoreColors().filter(color => color.category === 'Ocean Blue'),
+    'brown-earth': parseCoreColors().filter(color => color.category === 'Brown Earth'),
+    'dark-stormblue': parseCoreColors().filter(color => color.category === 'Dark Storm Blue'),
+    'sand-brown': parseCoreColors().filter(color => color.category === 'Sand Brown'),
+    'stone-blue': parseCoreColors().filter(color => color.category === 'Stone Blue'),
+    gray: parseCoreColors().filter(color => color.category === 'Gray'),
+    'light-gray': parseCoreColors().filter(color => color.category === 'Light Gray'),
+    white: parseCoreColors().filter(color => color.category === 'White'),
+    blue: parseCoreColors().filter(color => color.category === 'Blue'),
+    black: parseCoreColors().filter(color => color.category === 'Black')
+  },
+  semantic: {
+    alert: parseSemanticTokens().filter(token => token.category === 'Alert'),
+    warning: parseSemanticTokens().filter(token => token.category === 'Warning'),
+    success: parseSemanticTokens().filter(token => token.category === 'Success')
+  }
+}; 

@@ -1,5 +1,6 @@
 /* Import documentation-specific styles */
 @import './docs.css';
+@import '../design-tokens/tokens.css';
 
 @tailwind base;
 @tailwind components;
@@ -36,151 +37,96 @@
     --ds-line-height-tight: 1.2;
     --ds-line-height-normal: 1.5;
     --ds-line-height-loose: 1.8;
-
-    /* ===== CORE TOKENS (Primitive Values) ===== */
     
-    /* Core Color Palette - Gray/Neutral */
-    --gray-50: #f9fafb;
-    --gray-100: #f3f4f6;
-    --gray-200: #e5e7eb;
-    --gray-300: #d1d5db;
-    --gray-400: #9ca3af;
-    --gray-500: #6b7280;
-    --gray-600: #4b5563;
-    --gray-700: #374151;
-    --gray-800: #1f2937;
-    --gray-900: #111827;
-    --gray-950: #030712;
 
-    /* Core Color Palette - Blue */
-    --blue-50: #eff6ff;
-    --blue-100: #dbeafe;
-    --blue-200: #bfdbfe;
-    --blue-300: #93c5fd;
-    --blue-400: #60a5fa;
-    --blue-500: #3b82f6;
-    --blue-600: #2563eb;
-    --blue-700: #1d4ed8;
-    --blue-800: #1e40af;
-    --blue-900: #1e3a8a;
-    --blue-950: #172554;
+    /* ===== PURE SPECTRUM COLORS ===== */
+    
+      /* Core Color Palette - Gray/Neutral (PureSpectrum) */
+    --gray-50: #FCFCFD;
+    --gray-100: #f1f2f4;
+    --gray-200: #dfe2e7;
+    --gray-300: #c2c8d1;
+    --gray-400: #a9b0bc;
+    --gray-500: #9299ab;
+    --gray-600: #818798;
+    --gray-700: #75798a;
+    --gray-800: #656772;
+    --gray-900: #57585c;
+    --gray-950: #333333;
 
-    /* Core Color Palette - Red */
-    --red-50: #fef2f2;
-    --red-100: #fee2e2;
-    --red-200: #fecaca;
-    --red-300: #fca5a5;
-    --red-400: #f87171;
-    --red-500: #ef4444;
-    --red-600: #dc2626;
-    --red-700: #b91c1c;
-    --red-800: #991b1b;
-    --red-900: #7f1d1d;
-    --red-950: #450a0a;
+    /* Light Blue */
+    --ps-lightblue-10: #fafcfd;
+    --ps-lightblue-30: #f0f7fa;
+    --ps-lightblue-50: #cee4ef;
+    --ps-lightblue-65: #dfedf5;
+    --ps-lightblue-120: #9acadf;
 
-    /* Core Color Palette - Green */
-    --green-50: #f0fdf4;
-    --green-100: #dcfce7;
-    --green-200: #bbf7d0;
-    --green-300: #86efac;
-    --green-400: #4ade80;
-    --green-500: #22c55e;
-    --green-600: #16a34a;
-    --green-700: #15803d;
-    --green-800: #166534;
-    --green-900: #14532d;
-    --green-950: #052e16;
+    /* Ocean Blue */
+    --ps-ocean-blue-10: #eff4f9;
+    --ps-ocean-blue-30: #cedeec;
+    --ps-ocean-blue-50: #5b90c0;
+    --ps-ocean-blue-65: #94b7d6;
+    --ps-ocean-blue-120: #4878ad;
 
-    /* Core Color Palette - Amber */
-    --amber-50: #fffbeb;
-    --amber-100: #fef3c7;
-    --amber-200: #fde68a;
-    --amber-300: #fcd34d;
-    --amber-400: #fbbf24;
-    --amber-500: #f59e0b;
-    --amber-600: #d97706;
-    --amber-700: #b45309;
-    --amber-800: #92400e;
-    --amber-900: #78350f;
-    --amber-950: #451a03;
+    /* Brown Earth */
+    --ps-brown-earth-10: #f6f1f1;
+    --ps-brown-earth-30: #e3d6d4;
+    --ps-brown-earth-50: #a37871;
+    --ps-brown-earth-65: #c3a7a3;
+    --ps-brown-earth-120: #825a53;
 
-    /* Core Color Palette - Orange */
-    --orange-50: #fff7ed;
-    --orange-100: #ffedd5;
-    --orange-200: #fed7aa;
-    --orange-300: #fdba74;
-    --orange-400: #fb923c;
-    --orange-500: #f97316;
-    --orange-600: #ea580c;
-    --orange-700: #c2410c;
-    --orange-800: #9a3412;
-    --orange-900: #7c2d12;
-    --orange-950: #431407;
+    /* Dark Storm Blue */
+    --ps-dark-stormblue-10: #e9ebec;
+    --ps-dark-stormblue-30: #bec2c7;
+    --ps-dark-stormblue-50: #253446;
+    --ps-dark-stormblue-65: #717b87;
+    --ps-dark-stormblue-120: #1c2735;
 
-    /* Core Color Palette - Purple */
-    --purple-50: #faf5ff;
-    --purple-100: #f3e8ff;
-    --purple-200: #e9d5ff;
-    --purple-300: #d8b4fe;
-    --purple-400: #c084fc;
-    --purple-500: #a855f7;
-    --purple-600: #9333ea;
-    --purple-700: #7c3aed;
-    --purple-800: #6b21a8;
-    --purple-900: #581c87;
-    --purple-950: #3b0764;
+    /* Sand Brown */
+    --ps-sand-brown-10: #fbf9f6;
+    --ps-sand-brown-30: #f3ece5;
+    --ps-sand-brown-50: #d8bfaa;
+    --ps-sand-brown-65: #e6d5c8;
+    --ps-sand-brown-120: #c09477;
 
-    /* Core Color Palette - Indigo */
-    --indigo-50: #eef2ff;
-    --indigo-100: #e0e7ff;
-    --indigo-200: #c7d2fe;
-    --indigo-300: #a5b4fc;
-    --indigo-400: #818cf8;
-    --indigo-500: #6366f1;
-    --indigo-600: #4f46e5;
-    --indigo-700: #4338ca;
-    --indigo-800: #3730a3;
-    --indigo-900: #312e81;
-    --indigo-950: #1e1b4b;
+    /* Stone Blue */
+    --ps-stone-blue-10: #eceff4;
+    --ps-stone-blue-30: #c6d0dd;
+    --ps-stone-blue-50: #40628d;
+    --ps-stone-blue-65: #8399b5;
+    --ps-stone-blue-120: #2a5183;
 
-    /* Core Color Palette - Sky */
-    --sky-50: #f0f9ff;
-    --sky-100: #e0f2fe;
-    --sky-200: #bae6fd;
-    --sky-300: #7dd3fc;
-    --sky-400: #38bdf8;
-    --sky-500: #0ea5e9;
-    --sky-600: #0284c7;
-    --sky-700: #0369a1;
-    --sky-800: #075985;
-    --sky-900: #0c4a6e;
-    --sky-950: #082f49;
+    /* Basic Colors */
+    --ps-gray: #9299ab;
+    --ps-light-gray: #f6f6f6;
+    --ps-white: #ffffff;
+    --ps-blue: #142a3d;
+    --ps-black: #272727;
 
-    /* Core Color Palette - Pink */
-    --pink-50: #fdf2f8;
-    --pink-100: #fce7f3;
-    --pink-200: #fbcfe8;
-    --pink-300: #f9a8d4;
-    --pink-400: #f472b6;
-    --pink-500: #ec4899;
-    --pink-600: #db2777;
-    --pink-700: #be185d;
-    --pink-800: #9d174d;
-    --pink-900: #831843;
-    --pink-950: #500724;
+    /* ===== SEMANTIC COLOR TOKENS ===== */
+    
+    /* Alert Colors */
+    --alert-05: #fdeff1;
+    --alert-10: #fce8ea;
+    --alert-30: #f7bbc0;
+    --alert-50: #e31c2c;
+    --alert-70: #ed6b76;
+    --alert-90: #bf1624;
 
-    /* Core Color Palette - Teal */
-    --teal-50: #f0fdfa;
-    --teal-100: #ccfbf1;
-    --teal-200: #99f6e4;
-    --teal-300: #5eead4;
-    --teal-400: #2dd4bf;
-    --teal-500: #14b8a6;
-    --teal-600: #0d9488;
-    --teal-700: #0f766e;
-    --teal-800: #115e59;
-    --teal-900: #134e4a;
-    --teal-950: #042f2e;
+    /* Warning Colors */
+    --warning-05: #fdf7e7;
+    --warning-30: #f6d687;
+    --warning-50: #f0ce3f;
+    --warning-70: #b0820e;
+    --warning-90: #694e08;
+
+    /* Success Colors */
+    --success-05: #ebf3eb;
+    --success-10: #f5faef;
+    --success-30: #e0f1d0;
+    --success-50: #247f3f;
+    --success-65: #bde198;
+    --success-120: #548d23;
 
     /* Core Spacing Scale */
     --space-0: 0rem;
