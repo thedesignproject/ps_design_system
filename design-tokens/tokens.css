@@ -1,252 +1,198 @@
-/* Design Tokens - All Themes */
-
-/* Light Theme */
+/* Design Tokens - Complete Design System */
 :root {
-  --gray-50: #f9fafb;
-  --gray-100: #f3f4f6;
-  --gray-200: #e5e7eb;
-  --gray-300: #d1d5db;
-  --gray-400: #9ca3af;
-  --gray-500: #6b7280;
-  --gray-600: #4b5563;
-  --gray-700: #374151;
-  --gray-800: #1f2937;
-  --gray-900: #111827;
-  --gray-950: #030712;
-  --blue-50: #eff6ff;
-  --blue-100: #dbeafe;
-  --blue-200: #bfdbfe;
-  --blue-300: #93c5fd;
-  --blue-400: #60a5fa;
-  --blue-500: #3b82f6;
-  --blue-600: #2563eb;
-  --blue-700: #1d4ed8;
-  --blue-800: #1e40af;
-  --blue-900: #1e3a8a;
-  --blue-950: #172554;
-  --red-50: #fef2f2;
-  --red-100: #fee2e2;
-  --red-200: #fecaca;
-  --red-300: #fca5a5;
-  --red-400: #f87171;
-  --red-500: #ef4444;
-  --red-600: #dc2626;
-  --red-700: #b91c1c;
-  --red-800: #991b1b;
-  --red-900: #7f1d1d;
-  --red-950: #450a0a;
-  --green-50: #f0fdf4;
-  --green-100: #dcfce7;
-  --green-200: #bbf7d0;
-  --green-300: #86efac;
-  --green-400: #4ade80;
-  --green-500: #22c55e;
-  --green-600: #16a34a;
-  --green-700: #15803d;
-  --green-800: #166534;
-  --green-900: #14532d;
-  --green-950: #052e16;
-  --amber-50: #fffbeb;
-  --amber-100: #fef3c7;
-  --amber-200: #fde68a;
-  --amber-300: #fcd34d;
-  --amber-400: #fbbf24;
-  --amber-500: #f59e0b;
-  --amber-600: #d97706;
-  --amber-700: #b45309;
-  --amber-800: #92400e;
-  --amber-900: #78350f;
-  --amber-950: #451a03;
-  --orange-50: #fff7ed;
-  --orange-100: #ffedd5;
-  --orange-200: #fed7aa;
-  --orange-300: #fdba74;
-  --orange-400: #fb923c;
-  --orange-500: #f97316;
-  --orange-600: #ea580c;
-  --orange-700: #c2410c;
-  --orange-800: #9a3412;
-  --orange-900: #7c2d12;
-  --orange-950: #431407;
-  --purple-50: #faf5ff;
-  --purple-100: #f3e8ff;
-  --purple-200: #e9d5ff;
-  --purple-300: #d8b4fe;
-  --purple-400: #c084fc;
-  --purple-500: #a855f7;
-  --purple-600: #9333ea;
-  --purple-700: #7c3aed;
-  --purple-800: #6b21a8;
-  --purple-900: #581c87;
-  --purple-950: #3b0764;
-  --indigo-50: #eef2ff;
-  --indigo-100: #e0e7ff;
-  --indigo-200: #c7d2fe;
-  --indigo-300: #a5b4fc;
-  --indigo-400: #818cf8;
-  --indigo-500: #6366f1;
-  --indigo-600: #4f46e5;
-  --indigo-700: #4338ca;
-  --indigo-800: #3730a3;
-  --indigo-900: #312e81;
-  --indigo-950: #1e1b4b;
-  --sky-50: #f0f9ff;
-  --sky-100: #e0f2fe;
-  --sky-200: #bae6fd;
-  --sky-300: #7dd3fc;
-  --sky-400: #38bdf8;
-  --sky-500: #0ea5e9;
-  --sky-600: #0284c7;
-  --sky-700: #0369a1;
-  --sky-800: #075985;
-  --sky-900: #0c4a6e;
-  --sky-950: #082f49;
-  --pink-50: #fdf2f8;
-  --pink-100: #fce7f3;
-  --pink-200: #fbcfe8;
-  --pink-300: #f9a8d4;
-  --pink-400: #f472b6;
-  --pink-500: #ec4899;
-  --pink-600: #db2777;
-  --pink-700: #be185d;
-  --pink-800: #9d174d;
-  --pink-900: #831843;
-  --pink-950: #500724;
-  --teal-50: #f0fdfa;
-  --teal-100: #ccfbf1;
-  --teal-200: #99f6e4;
-  --teal-300: #5eead4;
-  --teal-400: #2dd4bf;
-  --teal-500: #14b8a6;
-  --teal-600: #0d9488;
-  --teal-700: #0f766e;
-  --teal-800: #115e59;
-  --teal-900: #134e4a;
-  --teal-950: #042f2e;
-  --color-primary: var(--blue-600);
-  --color-primary-hover: var(--blue-700);
-  --color-primary-active: var(--blue-800);
-  --color-primary-disabled: var(--blue-300);
-  --color-primary-subtle: var(--blue-50);
-  --color-text-primary: var(--gray-900);
-  --color-text-secondary: var(--gray-700);
-  --color-text-tertiary: var(--gray-500);
-  --color-text-disabled: var(--gray-400);
-  --color-text-inverse: var(--gray-50);
-  --color-text-link: var(--blue-600);
-  --color-text-link-hover: var(--blue-700);
-  --color-background: #ffffff;
-  --color-background-subtle: var(--gray-50);
-  --color-surface: #ffffff;
-  --color-surface-subtle: var(--gray-50);
+  /* ===== TYPOGRAPHY TOKENS ===== */
+  
+  /* Font Families */
+  --ds-font-sans: 'Inter', system-ui, sans-serif;
+  --ds-font-heading: 'Poppins', sans-serif;  
+  --ds-font-mono: 'Fira Code', ui-monospace, monospace;
+  --ds-font-display: 'Playfair Display', serif;
+  
+  /* Font Weights */
+  --ds-font-weight-thin: 100;
+  --ds-font-weight-light: 300;
+  --ds-font-weight-regular: 400;
+  --ds-font-weight-medium: 500;
+  --ds-font-weight-semibold: 600;
+  --ds-font-weight-bold: 700;
+  --ds-font-weight-black: 900;
+  
+  /* Letter Spacing */
+  --ds-letter-spacing-tight: -0.025em;
+  --ds-letter-spacing-normal: 0em;
+  --ds-letter-spacing-wide: 0.025em;
+  
+  /* Line Heights */
+  --ds-line-height-tight: 1.2;
+  --ds-line-height-normal: 1.5;
+  --ds-line-height-loose: 1.8;
+
+  /* ===== SPACING TOKENS ===== */
+  --space-0: 0rem;
+  --space-px: 0.0625rem;
+  --space-0-5: 0.125rem;
+  --space-1: 0.25rem;
+  --space-1-5: 0.375rem;
+  --space-2: 0.5rem;
+  --space-2-5: 0.625rem;
+  --space-3: 0.75rem;
+  --space-3-5: 0.875rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-9: 2.25rem;
+  --space-10: 2.5rem;
+  --space-11: 2.75rem;
+  --space-12: 3rem;
+  --space-14: 3.5rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-28: 7rem;
+  --space-32: 8rem;
+  --space-36: 9rem;
+  --space-40: 10rem;
+  --space-44: 11rem;
+  --space-48: 12rem;
+  --space-52: 13rem;
+  --space-56: 14rem;
+  --space-60: 15rem;
+  --space-64: 16rem;
+  --space-72: 18rem;
+  --space-80: 20rem;
+  --space-96: 24rem;
+
+  /* ===== BORDER RADIUS TOKENS ===== */
+  --radius-none: 0rem;
+  --radius-sm: 0.125rem;
+  --radius-base: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-3xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* ===== PURE SPECTRUM COLORS ===== */
+  
+  /* Neutral Colors */
+  --gray-50: #FCFCFD;
+  --gray-100: #f1f2f4;
+  --gray-200: #dfe2e7;
+  --gray-300: #c2c8d1;
+  --gray-400: #a9b0bc;
+  --gray-500: #9299ab;
+  --gray-600: #818798;
+  --gray-700: #75798a;
+  --gray-800: #656772;
+  --gray-900: #57585c;
+  --gray-950: #333333;
+  
+  /* Primary */
+  --ps-lightblue-10: #fafcfd;
+  --ps-lightblue-30: #f0f7fa;
+  --ps-lightblue-50: #cee4ef;
+  --ps-lightblue-65: #dfedf5;
+  --ps-lightblue-120: #9acadf;
+  
+  --ps-ocean-blue-10: #eff4f9;
+  --ps-ocean-blue-30: #cedeec;
+  --ps-ocean-blue-50: #5b90c0;
+  --ps-ocean-blue-65: #94b7d6;
+  --ps-ocean-blue-120: #4878ad;
+  
+  --ps-brown-earth-10: #f6f1f1;
+  --ps-brown-earth-30: #e3d6d4;
+  --ps-brown-earth-50: #a37871;
+  --ps-brown-earth-65: #c3a7a3;
+  --ps-brown-earth-120: #825a53;
+  
+  --ps-dark-stormblue-10: #e9ebec;
+  --ps-dark-stormblue-30: #bec2c7;
+  --ps-dark-stormblue-50: #253446;
+  --ps-dark-stormblue-65: #717b87;
+  --ps-dark-stormblue-120: #1c2735;
+  
+  /* Secondary */
+  --ps-sand-brown-10: #fbf9f6;
+  --ps-sand-brown-30: #f3ece5;
+  --ps-sand-brown-50: #d8bfaa;
+  --ps-sand-brown-65: #e6d5c8;
+  --ps-sand-brown-120: #c09477;
+  
+  --ps-stone-blue-10: #eceff4;
+  --ps-stone-blue-30: #c6d0dd;
+  --ps-stone-blue-50: #40628d;
+  --ps-stone-blue-65: #8399b5;
+  --ps-stone-blue-120: #2a5183;
+  
+  --ps-gray: #9299ab;
+  --ps-light-gray: #f6f6f6;
+  
+  /* Basic */
+  --ps-white: #ffffff;
+  --ps-blue: #142a3d;
+  --ps-black: #272727;
+
+  /* ===== SEMANTIC COLOR TOKENS (PureSpectrum) ===== */
+  
+  /* Brand Colors - Using PureSpectrum Ocean Blue */
+  --color-primary: var(--ps-ocean-blue-50);
+  --color-primary-hover: var(--ps-ocean-blue-120);
+  --color-primary-active: var(--ps-dark-stormblue-50);
+  --color-primary-disabled: var(--ps-ocean-blue-30);
+  --color-primary-subtle: var(--ps-ocean-blue-10);
+
+  /* Text Colors - Using PureSpectrum Neutral */
+  --color-text-primary: var(--ps-blue);
+  --color-text-secondary: var(--gray-900);
+  --color-text-tertiary: var(--gray-700);
+  --color-text-disabled: var(--gray-500);
+  --color-text-inverse: var(--ps-white);
+  --color-text-link: var(--ps-ocean-blue-50);
+  --color-text-link-hover: var(--ps-ocean-blue-120);
+
+  /* Background Colors - Using PureSpectrum */
+  --color-background: var(--ps-white);
+  --color-background-subtle: var(--ps-light-gray);
+  --color-surface: var(--ps-white);
+  --color-surface-subtle: var(--ps-light-gray);
   --color-surface-hover: var(--gray-100);
   --color-surface-pressed: var(--gray-200);
+
+  /* Border Colors - Using PureSpectrum */
   --color-border: var(--gray-200);
   --color-border-subtle: var(--gray-100);
   --color-border-strong: var(--gray-300);
-  --color-border-focus: var(--blue-500);
-  --color-success: var(--green-600);
+  --color-border-focus: var(--ps-ocean-blue-50);
+
+  /* Feedback Colors - Success (PureSpectrum) */
+  --color-success: var(--green-500);
   --color-success-background: var(--green-50);
   --color-success-border: var(--green-200);
-  --color-success-hover: var(--green-700);
-  --color-error: var(--red-600);
+  --color-success-hover: var(--green-500);
+
+  /* Feedback Colors - Error (PureSpectrum Alert) */
+  --color-error: var(--red-500);
   --color-error-background: var(--red-50);
   --color-error-border: var(--red-200);
-  --color-error-hover: var(--red-700);
-  --color-warning: var(--amber-600);
+  --color-error-hover: var(--red-500);
+
+  /* Feedback Colors - Warning (PureSpectrum) */
+  --color-warning: var(--amber-500);
   --color-warning-background: var(--amber-50);
   --color-warning-border: var(--amber-200);
-  --color-warning-hover: var(--amber-700);
-  --color-info: var(--blue-600);
-  --color-info-background: var(--blue-50);
-  --color-info-border: var(--blue-200);
-  --color-info-hover: var(--blue-700);
-  --background: #ffffff;
-  --foreground: #020817;
-  --card: #ffffff;
-  --card-foreground: #020817;
-  --popover: #ffffff;
-  --popover-foreground: #020817;
-  --primary: #0f172a;
-  --secondary: #f1f5f9;
-  --muted: #f1f5f9;
-  --accent: #f1f5f9;
-  --destructive: #ef4444;
-  --border: #e2e8f0;
-  --input: #e2e8f0;
-  --ring: #020817;
-  --radius: var(--radius-lg);
-  --sidebar-background: #fafafa;
-  --sidebar-foreground: #3f3f46;
-  --sidebar-primary: #18181b;
-  --sidebar-primary-foreground: #fafafa;
-  --sidebar-accent: #f4f4f5;
-  --sidebar-accent-foreground: #18181b;
-  --sidebar-border: #e5e7eb;
-  --sidebar-ring: #3b82f6;
-}
+  --color-warning-hover: var(--amber-500);
 
-/* Dark Theme */
-.dark {
-  --color-primary: var(--blue-600);
-  --color-primary-hover: var(--blue-700);
-  --color-primary-active: var(--blue-800);
-  --color-primary-disabled: var(--blue-300);
-  --color-primary-subtle: var(--blue-50);
-  --color-text-primary: var(--gray-50);
-  --color-text-secondary: var(--gray-300);
-  --color-text-tertiary: var(--gray-500);
-  --color-text-disabled: var(--gray-600);
-  --color-text-inverse: var(--gray-900);
-  --color-text-link: var(--blue-400);
-  --color-text-link-hover: var(--blue-300);
-  --color-background: var(--gray-950);
-  --color-background-subtle: var(--gray-900);
-  --color-surface: var(--gray-900);
-  --color-surface-subtle: var(--gray-800);
-  --color-surface-hover: var(--gray-800);
-  --color-surface-pressed: var(--gray-700);
-  --color-border: var(--gray-700);
-  --color-border-subtle: var(--gray-800);
-  --color-border-strong: var(--gray-600);
-  --color-border-focus: var(--blue-500);
-  --color-success: var(--green-400);
-  --color-success-background: var(--green-950);
-  --color-success-border: var(--green-800);
-  --color-success-hover: var(--green-300);
-  --color-error: var(--red-400);
-  --color-error-background: var(--red-950);
-  --color-error-border: var(--red-800);
-  --color-error-hover: var(--red-300);
-  --color-warning: var(--amber-400);
-  --color-warning-background: var(--amber-950);
-  --color-warning-border: var(--amber-800);
-  --color-warning-hover: var(--amber-300);
-  --color-info: var(--blue-400);
-  --color-info-background: var(--blue-950);
-  --color-info-border: var(--blue-800);
-  --color-info-hover: var(--blue-300);
-  --background: #020817;
-  --foreground: #f8fafc;
-  --card: #020817;
-  --card-foreground: #f8fafc;
-  --popover: #020817;
-  --popover-foreground: #f8fafc;
-  --primary: #f8fafc;
-  --secondary: #1e293b;
-  --muted: #1e293b;
-  --accent: #1e293b;
-  --destructive: #7f1d1d;
-  --border: #1e293b;
-  --input: #1e293b;
-  --ring: #cbd5e1;
-  --sidebar-background: #18181b;
-  --sidebar-foreground: #f4f4f5;
-  --sidebar-primary: #030712;
-  --sidebar-primary-foreground: #f9fafb;
-  --sidebar-accent: #27272a;
-  --sidebar-accent-foreground: #f4f4f5;
-  --sidebar-border: #27272a;
-  --sidebar-ring: #3b82f6;
-  --radius: var(--radius-lg);
+  /* Feedback Colors - Info (PureSpectrum Ocean Blue) */
+  --color-info: var(--ps-ocean-blue-50);
+  --color-info-background: var(--ps-ocean-blue-10);
+  --color-info-border: var(--ps-ocean-blue-30);
+  --color-info-hover: var(--ps-ocean-blue-120);
+
+  /* Legacy Tokens (for backward compatibility) */
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
 }

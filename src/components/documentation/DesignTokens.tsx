@@ -266,7 +266,10 @@ export const DesignTokens: React.FC<{ activeToken: string }> = ({ activeToken })
                       title={`Click to copy: ${formatValue}`}
                       onClick={() => copyToClipboard(formatValue)}
                     >
-                      <div className={`h-16 ${color.class} transition-all duration-200 group-hover:scale-105`} />
+                      <div 
+                        className="h-16 transition-all duration-200 group-hover:scale-105"
+                        style={{ backgroundColor: color.cssVar }}
+                      />
                       <div className="p-2 bg-background text-left space-y-1">
                         <div className="text-xs font-medium text-foreground">
                           {color.name.toLowerCase().replace(' ', '-')}

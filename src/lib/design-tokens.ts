@@ -60,35 +60,79 @@ export interface BorderToken {
 // Utility functions to transform tokens
 function parseCoreColors(): ColorToken[] {
   const colors: ColorToken[] = [];
-  const globalColors = figmaTokens.global.colors;
   
-  // Define color categories and their order
-  const colorCategories = [
-    { name: 'Neutral', prefix: 'gray' },
-    { name: 'Blue', prefix: 'blue' },
-    { name: 'Red', prefix: 'red' },
-    { name: 'Green', prefix: 'green' },
-    { name: 'Amber', prefix: 'amber' },
-    { name: 'Orange', prefix: 'orange' },
-    { name: 'Purple', prefix: 'purple' },
-    { name: 'Indigo', prefix: 'indigo' },
-    { name: 'Sky', prefix: 'sky' },
-    { name: 'Pink', prefix: 'pink' },
-    { name: 'Teal', prefix: 'teal' },
+  // Define PureSpectrum colors from tokens.css
+  const pureSpectrumColors = [
+    // Neutral Colors
+    { name: 'Neutral 50', value: '#000000', class: 'bg-gray-50', category: 'Neutral', cssVar: 'var(--gray-50)' },
+    { name: 'Neutral 100', value: '#f1f2f4', class: 'bg-gray-100', category: 'Neutral', cssVar: 'var(--gray-100)' },
+    { name: 'Neutral 200', value: '#dfe2e7', class: 'bg-gray-200', category: 'Neutral', cssVar: 'var(--gray-200)' },
+    { name: 'Neutral 300', value: '#c2c8d1', class: 'bg-gray-300', category: 'Neutral', cssVar: 'var(--gray-300)' },
+    { name: 'Neutral 400', value: '#a9b0bc', class: 'bg-gray-400', category: 'Neutral', cssVar: 'var(--gray-400)' },
+    { name: 'Neutral 500', value: '#9299ab', class: 'bg-gray-500', category: 'Neutral', cssVar: 'var(--gray-500)' },
+    { name: 'Neutral 600', value: '#818798', class: 'bg-gray-600', category: 'Neutral', cssVar: 'var(--gray-600)' },
+    { name: 'Neutral 700', value: '#75798a', class: 'bg-gray-700', category: 'Neutral', cssVar: 'var(--gray-700)' },
+    { name: 'Neutral 800', value: '#656772', class: 'bg-gray-800', category: 'Neutral', cssVar: 'var(--gray-800)' },
+    { name: 'Neutral 900', value: '#57585c', class: 'bg-gray-900', category: 'Neutral', cssVar: 'var(--gray-900)' },
+    { name: 'Neutral 950', value: '#333333', class: 'bg-gray-950', category: 'Neutral', cssVar: 'var(--gray-950)' },
+    
+    // Light Blue
+    { name: 'Light Blue 10', value: '#fafcfd', class: 'bg-ps-lightblue-10', category: 'Light Blue', cssVar: 'var(--ps-lightblue-10)' },
+    { name: 'Light Blue 30', value: '#f0f7fa', class: 'bg-ps-lightblue-30', category: 'Light Blue', cssVar: 'var(--ps-lightblue-30)' },
+    { name: 'Light Blue 50', value: '#cee4ef', class: 'bg-ps-lightblue-50', category: 'Light Blue', cssVar: 'var(--ps-lightblue-50)' },
+    { name: 'Light Blue 65', value: '#dfedf5', class: 'bg-ps-lightblue-65', category: 'Light Blue', cssVar: 'var(--ps-lightblue-65)' },
+    { name: 'Light Blue 120', value: '#9acadf', class: 'bg-ps-lightblue-120', category: 'Light Blue', cssVar: 'var(--ps-lightblue-120)' },
+    
+    // Ocean Blue
+    { name: 'Ocean Blue 10', value: '#eff4f9', class: 'bg-ps-ocean-blue-10', category: 'Ocean Blue', cssVar: 'var(--ps-ocean-blue-10)' },
+    { name: 'Ocean Blue 30', value: '#cedeec', class: 'bg-ps-ocean-blue-30', category: 'Ocean Blue', cssVar: 'var(--ps-ocean-blue-30)' },
+    { name: 'Ocean Blue 50', value: '#5b90c0', class: 'bg-ps-ocean-blue-50', category: 'Ocean Blue', cssVar: 'var(--ps-ocean-blue-50)' },
+    { name: 'Ocean Blue 65', value: '#94b7d6', class: 'bg-ps-ocean-blue-65', category: 'Ocean Blue', cssVar: 'var(--ps-ocean-blue-65)' },
+    { name: 'Ocean Blue 120', value: '#4878ad', class: 'bg-ps-ocean-blue-120', category: 'Ocean Blue', cssVar: 'var(--ps-ocean-blue-120)' },
+    
+    // Brown Earth
+    { name: 'Brown Earth 10', value: '#f6f1f1', class: 'bg-ps-brown-earth-10', category: 'Brown Earth', cssVar: 'var(--ps-brown-earth-10)' },
+    { name: 'Brown Earth 30', value: '#e3d6d4', class: 'bg-ps-brown-earth-30', category: 'Brown Earth', cssVar: 'var(--ps-brown-earth-30)' },
+    { name: 'Brown Earth 50', value: '#a37871', class: 'bg-ps-brown-earth-50', category: 'Brown Earth', cssVar: 'var(--ps-brown-earth-50)' },
+    { name: 'Brown Earth 65', value: '#c3a7a3', class: 'bg-ps-brown-earth-65', category: 'Brown Earth', cssVar: 'var(--ps-brown-earth-65)' },
+    { name: 'Brown Earth 120', value: '#825a53', class: 'bg-ps-brown-earth-120', category: 'Brown Earth', cssVar: 'var(--ps-brown-earth-120)' },
+    
+    // Dark Storm Blue
+    { name: 'Dark Storm Blue 10', value: '#e9ebec', class: 'bg-ps-dark-stormblue-10', category: 'Dark Storm Blue', cssVar: 'var(--ps-dark-stormblue-10)' },
+    { name: 'Dark Storm Blue 30', value: '#bec2c7', class: 'bg-ps-dark-stormblue-30', category: 'Dark Storm Blue', cssVar: 'var(--ps-dark-stormblue-30)' },
+    { name: 'Dark Storm Blue 50', value: '#253446', class: 'bg-ps-dark-stormblue-50', category: 'Dark Storm Blue', cssVar: 'var(--ps-dark-stormblue-50)' },
+    { name: 'Dark Storm Blue 65', value: '#717b87', class: 'bg-ps-dark-stormblue-65', category: 'Dark Storm Blue', cssVar: 'var(--ps-dark-stormblue-65)' },
+    { name: 'Dark Storm Blue 120', value: '#1c2735', class: 'bg-ps-dark-stormblue-120', category: 'Dark Storm Blue', cssVar: 'var(--ps-dark-stormblue-120)' },
+    
+    // Sand Brown
+    { name: 'Sand Brown 10', value: '#fbf9f6', class: 'bg-ps-sand-brown-10', category: 'Sand Brown', cssVar: 'var(--ps-sand-brown-10)' },
+    { name: 'Sand Brown 30', value: '#f3ece5', class: 'bg-ps-sand-brown-30', category: 'Sand Brown', cssVar: 'var(--ps-sand-brown-30)' },
+    { name: 'Sand Brown 50', value: '#d8bfaa', class: 'bg-ps-sand-brown-50', category: 'Sand Brown', cssVar: 'var(--ps-sand-brown-50)' },
+    { name: 'Sand Brown 65', value: '#e6d5c8', class: 'bg-ps-sand-brown-65', category: 'Sand Brown', cssVar: 'var(--ps-sand-brown-65)' },
+    { name: 'Sand Brown 120', value: '#c09477', class: 'bg-ps-sand-brown-120', category: 'Sand Brown', cssVar: 'var(--ps-sand-brown-120)' },
+    
+    // Stone Blue
+    { name: 'Stone Blue 10', value: '#eceff4', class: 'bg-ps-stone-blue-10', category: 'Stone Blue', cssVar: 'var(--ps-stone-blue-10)' },
+    { name: 'Stone Blue 30', value: '#c6d0dd', class: 'bg-ps-stone-blue-30', category: 'Stone Blue', cssVar: 'var(--ps-stone-blue-30)' },
+    { name: 'Stone Blue 50', value: '#40628d', class: 'bg-ps-stone-blue-50', category: 'Stone Blue', cssVar: 'var(--ps-stone-blue-50)' },
+    { name: 'Stone Blue 65', value: '#8399b5', class: 'bg-ps-stone-blue-65', category: 'Stone Blue', cssVar: 'var(--ps-stone-blue-65)' },
+    { name: 'Stone Blue 120', value: '#2a5183', class: 'bg-ps-stone-blue-120', category: 'Stone Blue', cssVar: 'var(--ps-stone-blue-120)' },
+    
+    // Basic Colors
+    { name: 'Gray', value: '#9299ab', class: 'bg-ps-gray', category: 'Basic', cssVar: 'var(--ps-gray)' },
+    { name: 'Light Gray', value: '#f6f6f6', class: 'bg-ps-light-gray', category: 'Basic', cssVar: 'var(--ps-light-gray)' },
+    { name: 'White', value: '#ffffff', class: 'bg-ps-white', category: 'Basic', cssVar: 'var(--ps-white)' },
+    { name: 'Blue', value: '#142a3d', class: 'bg-ps-blue', category: 'Basic', cssVar: 'var(--ps-blue)' },
+    { name: 'Black', value: '#272727', class: 'bg-ps-black', category: 'Basic', cssVar: 'var(--ps-black)' }
   ];
 
-  colorCategories.forEach(category => {
-    Object.entries(globalColors).forEach(([key, colorData]) => {
-      if (key.startsWith(category.prefix + '-')) {
-        const shade = key.split('-')[1];
-        colors.push({
-          name: `${category.name} ${shade}`,
-          value: colorData.value,
-          class: `bg-${key}`,
-          category: category.name,
-          cssVar: `var(--${key})`
-        });
-      }
+  pureSpectrumColors.forEach(colorData => {
+    colors.push({
+      name: colorData.name,
+      value: colorData.value,
+      class: colorData.class,
+      category: colorData.category,
+      cssVar: colorData.cssVar
     });
   });
 
